@@ -4,9 +4,9 @@
 
 ## Preview
 
-[![Resume Preview](https://assets.startbootstrap.com/img/screenshots/themes/resume.png)](https://startbootstrap.github.io/startbootstrap-resume/)
+[![Resume Preview](https://davidjuan.github.io/dist/assets/img/screenshot.png)](https://davidjuan.github.io/)
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-resume/)**
+**[View Live Preview](https://davidjuan.github.io/)**
 ## Copyright and License
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-resume/master/LICENSE)
