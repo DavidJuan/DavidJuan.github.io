@@ -1,10 +1,11 @@
 {
-  "name": "curriculum",
+  "name": "website",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href=./",
+    "ghpages": "angular-cli-ghpages --dir=dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
