@@ -6,7 +6,7 @@
     "start": "ng serve -o",
     "start:en": "ng serve --configuration en -o",
     "start:pt": "ng serve --configuration pt -o",
-    "publish": "ng build && npm run build:en || npm run build:pt || npm run ghpages",
+    "publish": "ng build --base-href=/pt/index.html && npm run build:en || npm run build:pt || npm run ghpages",
     "build:en": "ng build --configuration en && robocopy /s dist\\en\\en\\ dist\\en\\ /MOVE",
     "build:pt": "ng build --configuration pt && robocopy /s dist\\pt\\pt\\ dist\\pt\\ /MOVE",
     "ghpages": "angular-cli-ghpages --dir=dist",
