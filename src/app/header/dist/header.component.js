@@ -87,6 +87,8 @@ var HeaderComponent = /** @class */ (function () {
         this.faBars = free_solid_svg_icons_1.faBars;
         this.faShareAlt = free_solid_svg_icons_1.faShareAlt;
         this.faCloudDownloadAlt = free_solid_svg_icons_1.faCloudDownloadAlt;
+        this.cvPath = "assets/David-Juan-pt.pdf";
+        this.titleCv = "Baixar Curriculo em PDF";
     };
     HeaderComponent.prototype.updateNavigation = function () {
         if (this._activeSection && this.renderer) {
@@ -137,6 +139,14 @@ var HeaderComponent = /** @class */ (function () {
                 }
             });
         });
+    };
+    HeaderComponent.prototype.refCvEn = function () {
+        this.cvPath = "assets/David-Juan-en.pdf";
+        this.titleCv = "Download Resume as PDF";
+    };
+    HeaderComponent.prototype.refCvPt = function () {
+        this.cvPath = "assets/David-Juan-pt.pdf";
+        this.titleCv = "Baixar Curriculo em PDF";
     };
     __decorate([
         core_1.ViewChild("nav")

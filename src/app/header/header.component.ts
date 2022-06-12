@@ -34,6 +34,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   faBars: IconDefinition;
   faShareAlt: IconDefinition;
   faCloudDownloadAlt: IconDefinition;
+  cvPath: string;
+  titleCv: string;
 
   @ViewChild("nav") nav: ElementRef;
   @ViewChild("shareBtn") shareBtn: ElementRef;
@@ -78,6 +80,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.faBars = faBars;
     this.faShareAlt = faShareAlt;
     this.faCloudDownloadAlt = faCloudDownloadAlt;
+    this.cvPath = "assets/David-Juan-pt.pdf";
+    this.titleCv = "Baixar Curriculo em PDF";
   }
 
   private updateNavigation() {
@@ -125,5 +129,14 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     } catch (error) {
       console.log("You app is not shared, reason: ", error);
     }
+  }
+
+  refCvEn() {
+    this.cvPath = "assets/David-Juan-en.pdf";
+    this.titleCv = "Download Resume as PDF";
+  }
+  refCvPt() {
+    this.cvPath = "assets/David-Juan-pt.pdf";
+    this.titleCv = "Baixar Curriculo em PDF";
   }
 }

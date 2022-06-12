@@ -42,9 +42,9 @@
            itemprop="url"><span itemprop="name">Contact</span></a></li>
       <!-- TODO: update here -->
       <li><a (click)="resetMenu()"
-           href="assets/cv-english-guilherme-bastos-v2.0.pdf"
+           [href]="cvPath"
            i18n-title="nav@@open.as.pdf"
-           title="Open Resume as PDF"
+           [title]="titleCv"
            target="_blank">
           <fa-icon [icon]="faCloudDownloadAlt"
                    class="bar-icon"></fa-icon>
@@ -60,14 +60,16 @@
             itemtype="https://schema.org/Language">
           <a href="/en/index.html"
              [ngClass]="{'active': locale === 'en'}"
-             itemprop="name">EN</a>
+             itemprop="name"
+             (click)="refCvEn()">EN</a>
         </li>
         <li itemprop="availableLanguage"
             itemscope
             itemtype="https://schema.org/Language">
           <a href="/pt/index.html"
              [ngClass]="{'active': locale === 'pt'}"
-             itemprop="name">PT</a>
+             itemprop="name"
+             (click)="refCvPt()">PT</a>
         </li>
       </ul>
     </div>
