@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://davidjuan.github.io/sitemap.xml

@@ -1,0 +1,42 @@
+{
+  "internationalizations": [
+    {
+      "language": "pt",
+      "description": "Iniciei minha carreira em desenvolvimento de software em 2014 com a linguagem C++, atuando em programação de robôs, dispositivos de segurança de máquinas e software de modelagem 3D.</br></br> Em 2016 migrei para linguagem C# sendo a maior parte de minha atuação na plataforma ASP.Net Core com biblioteca WebApi. Neste período desenvolvi softwares ERP para área fiscal e contábil, sistemas de gestão hospitalar e planos de saúde, e ultimamente atuando como Desenvolvedor Fullstack utilizando framework Angular no frontend em aplicações para gestão de contratos de clientes de sistema bancário.</br></br> Sempre em busca de novos desafios, mantenho constante contato com novas tecnologias a fim de consolidar e ampliar meu conhecimento"
+    },
+    {
+      "language": "en",
+      "description": "I started my career in software development in 2014 with the C++ language, working in robot programming, machine safety devices and 3D modeling software.</br></br> At 2016 I migrated to C# language, most of my work on the ASP.Net Core platform with WebApi library. During this period I developed ERP software for tax and accounting, hospital management systems and health plans, and lately working as a Fullstack Developer using Angular framework on the frontend in applications for managing contracts with banking system customers.</br></br> I am always looking for new challenges, I keep in constant contact with new technologies in order to consolidate and expand my knowledge."
+    }
+  ],
+  "medias": [
+    {
+      "icon": "linkedin",
+      "title": "LinkedIn",
+      "http": "https://www.linkedin.com/in/david-juan/"
+    },
+    {
+      "icon": "github",
+      "title": "GitHub",
+      "http": "https://github.com/DavidJuan"
+    }
+  ],
+  "hobbies": [
+    {
+      "icon": "gamepad",
+      "title": "Playing"
+    },
+    {
+      "icon": "dumbbell",
+      "title": "Gym"
+    },
+    {
+      "icon": "table-tennis",
+      "title": "Table Tennis"
+    },
+    {
+      "icon": "book",
+      "title": "Read"
+    }
+  ]
+}
