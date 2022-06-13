@@ -19,14 +19,18 @@ import { AngularFireDatabaseModule } from "@angular/fire/compat/database";
 import { AngularFireAnalyticsModule } from "@angular/fire/compat/analytics";
 import { environment } from "../environments/environment";
 
-import { HammerModule, HammerGestureConfig, HAMMER_GESTURE_CONFIG } from "@angular/platform-browser";
+import {
+  HammerModule,
+  HammerGestureConfig,
+  HAMMER_GESTURE_CONFIG,
+} from "@angular/platform-browser";
 import { DIRECTION_ALL } from "hammerjs";
 
 @Injectable()
-export class HammerConfig  extends HammerGestureConfig {
-    overrides = <any> {
-        swipe: { direction: DIRECTION_ALL },
-    };
+export class HammerConfig extends HammerGestureConfig {
+  overrides = <any>{
+    swipe: { direction: DIRECTION_ALL },
+  };
 }
 
 registerLocaleData(localeEn, "en");
@@ -42,16 +46,15 @@ registerLocaleData(localePt, "pt-BR", localePtExtra);
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAnalyticsModule,
-    HammerModule
+    HammerModule,
   ],
-  declarations: [ AppComponent ],
-  bootstrap: [ AppComponent ],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
   providers: [
     {
       provide: HAMMER_GESTURE_CONFIG,
       useClass: HammerConfig,
     },
-  ]
+  ],
 })
-
 export class AppModule {}

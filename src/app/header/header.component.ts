@@ -9,6 +9,7 @@ import {
   LOCALE_ID,
   AfterViewInit,
 } from "@angular/core";
+import { LocationStrategy } from "@angular/common";
 import {
   faBars,
   faShareAlt,
@@ -43,7 +44,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   constructor(
     @Inject(LOCALE_ID) public locale: string,
     private renderer: Renderer2,
-    ngNavigatorShareService: NgNavigatorShareService
+    ngNavigatorShareService: NgNavigatorShareService,
+    private url: LocationStrategy
   ) {
     this.ngNavigatorShareService = ngNavigatorShareService;
   }
@@ -80,8 +82,14 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.faBars = faBars;
     this.faShareAlt = faShareAlt;
     this.faCloudDownloadAlt = faCloudDownloadAlt;
-    this.cvPath = "assets/David-Juan-pt.pdf";
-    this.titleCv = "Baixar Curriculo em PDF";
+    if (this.url.path().includes("pt")) {
+      this.cvPath = "assets/David-Juan-pt.pdf";
+      this.titleCv = "Baixar Curriculo em PDF";
+    }
+    if (this.url.path().includes("en")) {
+      this.cvPath = "assets/David-Juan-en.pdf";
+      this.titleCv = "Download Resume as PDF";
+    }
   }
 
   private updateNavigation() {
@@ -123,20 +131,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     try {
       await this.ngNavigatorShareService.share({
         title: "Live Resume - David Juan",
-        text: "Hello, I'm a Full-stack Java Web Developer with 8+ years of experience designing web and mobile projects. Find out more in my live-resume!",
+        text: "Hello, I'm a Full-stack .Net/Angular Web Developer with 8+ years of experience designing web projects. Find out more in my live-resume!",
         url: "https://davidjuan.github.io",
       });
     } catch (error) {
       console.log("You app is not shared, reason: ", error);
     }
-  }
-
-  refCvEn() {
-    this.cvPath = "assets/David-Juan-en.pdf";
-    this.titleCv = "Download Resume as PDF";
-  }
-  refCvPt() {
-    this.cvPath = "assets/David-Juan-pt.pdf";
-    this.titleCv = "Baixar Curriculo em PDF";
   }
 }

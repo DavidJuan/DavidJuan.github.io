@@ -49,9 +49,10 @@ exports.HeaderComponent = void 0;
 var core_1 = require("@angular/core");
 var free_solid_svg_icons_1 = require("@fortawesome/free-solid-svg-icons");
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent(locale, renderer, ngNavigatorShareService) {
+    function HeaderComponent(locale, renderer, ngNavigatorShareService, url) {
         this.locale = locale;
         this.renderer = renderer;
+        this.url = url;
         this.ngNavigatorShareService = ngNavigatorShareService;
     }
     Object.defineProperty(HeaderComponent.prototype, "activeSection", {
@@ -87,8 +88,14 @@ var HeaderComponent = /** @class */ (function () {
         this.faBars = free_solid_svg_icons_1.faBars;
         this.faShareAlt = free_solid_svg_icons_1.faShareAlt;
         this.faCloudDownloadAlt = free_solid_svg_icons_1.faCloudDownloadAlt;
-        this.cvPath = "assets/David-Juan-pt.pdf";
-        this.titleCv = "Baixar Curriculo em PDF";
+        if (this.url.path().includes("pt")) {
+            this.cvPath = "assets/David-Juan-pt.pdf";
+            this.titleCv = "Baixar Curriculo em PDF";
+        }
+        if (this.url.path().includes("en")) {
+            this.cvPath = "assets/David-Juan-en.pdf";
+            this.titleCv = "Download Resume as PDF";
+        }
     };
     HeaderComponent.prototype.updateNavigation = function () {
         if (this._activeSection && this.renderer) {
@@ -125,7 +132,7 @@ var HeaderComponent = /** @class */ (function () {
                         _a.trys.push([0, 2, , 3]);
                         return [4 /*yield*/, this.ngNavigatorShareService.share({
                                 title: "Live Resume - David Juan",
-                                text: "Hello, I'm a Full-stack Java Web Developer with 8+ years of experience designing web and mobile projects. Find out more in my live-resume!",
+                                text: "Hello, I'm a Full-stack .Net/Angular Web Developer with 8+ years of experience designing web projects. Find out more in my live-resume!",
                                 url: "https://davidjuan.github.io"
                             })];
                     case 1:
@@ -139,14 +146,6 @@ var HeaderComponent = /** @class */ (function () {
                 }
             });
         });
-    };
-    HeaderComponent.prototype.refCvEn = function () {
-        this.cvPath = "assets/David-Juan-en.pdf";
-        this.titleCv = "Download Resume as PDF";
-    };
-    HeaderComponent.prototype.refCvPt = function () {
-        this.cvPath = "assets/David-Juan-pt.pdf";
-        this.titleCv = "Baixar Curriculo em PDF";
     };
     __decorate([
         core_1.ViewChild("nav")

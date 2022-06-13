@@ -5,8 +5,6 @@
     "startAt": "05-02-2014",
     "endAt": "03-24-2016",
     "companyName": "ESS Engenharia de Sistemas de Segurança",
-    "website": "http://www.faciltecnologias.com.br/",
-    "logo": "assets/template/experience/logo/facil-logo.png",
     "internationalizations": [
       {
         "language": "pt",
@@ -44,9 +42,9 @@
     ],
     "medias": [
       {
-        "icon": "facebook",
-        "title": "Facebook Editora Nosso Trânsito",
-        "http": "https://www.facebook.com/editoranossotransito/"
+        "icon": "linkedin",
+        "title": "LinkedIn ESS",
+        "http": "https://www.linkedin.com/company/ess-engenhria-de-sistemas-de-segurança/about/"
       }
     ],
     "backgroundUrl": "assets/template/experience/uberaba.jpg"
@@ -57,22 +55,20 @@
     "startAt": "12-02-2016",
     "endAt": "11-14-2019",
     "companyName": "Grupo Módulos",
-    "website": "https://www.e-tatica.com/",
-    "logo": "assets/template/experience/logo/etatica-logo.png",
     "internationalizations": [
       {
         "language": "pt",
         "city": "Santo André",
         "country": "Brasil",
         "role": "Analista de desenvolvimento de software",
-        "description": "A <b>E-tática</b> é uma agência especializada em soluções para <i>comércio eletrônico</i>, marketing digital e identidade visual desde 2008, trabalhando com grandes, pequenos e médios negócios, oferecendo para seus clientes, o know-how na integração de seus negócios com <i>Sistemas integrados de gestão empresarial (ERP)</i> e <i>APIs de terceiros</i>, tais como <i>provedores de pagamento personalizados</i>, fazendo a integração do gerenciamento interno da plataforma on-line e da loja física, sendo certificada pelas principais plataformas do mercado.<br><br>Na <i>E-tática </i>, trabalhei para desenvolver soluções personalizadas para clientes do atacado e varejo, valorizando a qualidade e a continuidade dos projetos a médio e longo prazo."
+        "description": "O <b>Grupo Módulos</b> tem uma trajetória focada na distribuição de soluções voltadas à classe contábil e empresarial com a meta de inovar, a fim de proporcionar a todos os usuários uma interface agradável e didática.<br><br> No <b>Grupo Módulos</b> atuei em sistema de ERP para pequenas e médias empresas integrado a emissor de NF-e / NFS-e.<br>Desenvolvimento backend utilizando C# / .NET.<br>SOLID e DDD<br>Ferramentas ORM (Entity Framework)<br>Consumo de Web Services SOAP/REST da Receita Federal.<br>Stored Procedures em BD SQL Server."
       },
       {
         "language": "en",
         "city": "Santo André",
         "country": "Brazil",
         "role": "Software development analyst",
-        "description": "<b>E-tática</b> is an agency specialized in solutions for <i>e-commerce</i>, digital marketing, and visual identity since 2008, working with large, small, and medium-sized businesses, offering to their clients the know-how in the integration of <i>enterprise resource planning (ERP)</i> and <i>third-party APIs</i>, such as custom <i>payment providers</i>. It does the integration of the internal management of the online platform and physical store, being certified by the main platforms in the market.<br><br>At <i>E-tática</i> I have worked to develop custom solutions for clients wholesale and retail, valuing the quality and continuity of projects in the medium and long term."
+        "description": "The <b>Grupo Módulos</b> has a trajectory focused on the distribution of solutions aimed at the accounting and business class with the goal of innovating, in order to provide all users with a pleasant and didactic interface.<br><br>On <b>Grupo Módulos</b> I worked in an ERP system for small and medium-sized companies integrated with an NF-e / NFS-e issuer.<br>Backend development using C# / .NET.<br>SOLID and DDD<br>ORM Tools (Entity Framework)<br>Consumption of SOAP/REST Web Services from the Internal Revenue Service.<br>Stored Procedures in SQL Server DB."
       }
     ],
     "technologies": [
@@ -95,18 +91,13 @@
     "medias": [
       {
         "icon": "linkedin",
-        "title": "LinkedIn E-tática",
-        "http": "https://www.linkedin.com/company/etatica/"
+        "title": "LinkedIn Grupo Módulos",
+        "http": "https://www.linkedin.com/company/grupo-modulos/"
       },
       {
-        "icon": "facebook",
-        "title": "Facebook E-tática",
-        "http": "https://www.facebook.com/etatica/"
-      },
-      {
-        "icon": "instagram",
-        "title": "Instagram E-tática",
-        "http": "https://www.instagram.com/somos_etatica/"
+        "icon": "youtube",
+        "title": "Site Grupo Módulos",
+        "http": "https://www.grupomodulos.com.br/moderp"
       }
     ],
     "backgroundUrl": "assets/template/experience/rio.jpg"
@@ -116,16 +107,16 @@
     "position": 3,
     "startAt": "11-21-2019",
     "endAt": "08-23-2021",
-    "companyName": "Deevo Studio",
-    "website": "http://deevo.com.br/",
-    "logo": "assets/template/experience/logo/deevo-logo.png",
+    "companyName": "TOTVS S.A.",
+    "website": "https://www.totvs.com/",
+    "logo": "assets/template/experience/logo/totvs-white-logo.png",
     "internationalizations": [
       {
         "language": "pt",
         "city": "São Paulo",
         "country": "Brasil",
-        "role": "Desenvolvedor Mobile",
-        "description": "A <b>Deevo Studio</b> é uma agência especializada em <i>web design</i> e <i>desenvolvimento</i> com um extenso portfólio de casos de sucesso, resultado de mais de <i>20 anos</i> de experiência com diversas agências e no mercado corporativo. Suas criações envolvem tudo, desde o desenvolvimento da marca e identidade visual, até a criação de aplicativos e sites, com um amplo conhecimento do Wordpress e das tecnologias da web. <br><br>Na <i>Deevo Studio</i>, tive a chance de usar o conhecimento anterior de <i>back-end</i> combinado com a experiência prática no desenvolvimento JAVA para aceitar o desafio de iniciar um <i>Departamento de Desenvolvimento Android</i> na empresa, fornecendo complexos <i>Aplicativos Android</i> para empresas no Brasil."
+        "role": "Analista de desenvolvimento de software",
+        "description": "Atualmente, 1 em cada 4 operadoras de planos de saúde no país, escolheram a TOTVS com parceira de tecnologia, utilizando o nosso erp para saúde. Temos uma equipe focada em compliance para atender todos os tipos de necessidades específicas do setor."
       },
       {
         "language": "en",
