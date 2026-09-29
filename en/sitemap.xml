@@ -1,27 +1,17 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://davidjuan.github.io/</loc>
-        <lastmod>2020-05-19T19:50:06+00:00</lastmod>
+        <loc>https://davidjuan.github.io/pt/</loc>
+        <lastmod>2026-09-29</lastmod>
         <priority>1.00</priority>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://davidjuan.github.io/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://davidjuan.github.io/en/"/>
     </url>
     <url>
-        <loc>https://davidjuan.github.io/about</loc>
-        <lastmod>2020-05-19T19:50:06+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://davidjuan.github.io/experience</loc>
-        <lastmod>2020-05-19T19:50:06+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://davidjuan.github.io/posts</loc>
-        <lastmod>2020-05-19T19:50:06+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://davidjuan.github.io/contact</loc>
-        <lastmod>2020-05-19T19:50:06+00:00</lastmod>
-        <priority>0.80</priority>
+        <loc>https://davidjuan.github.io/en/</loc>
+        <lastmod>2026-09-29</lastmod>
+        <priority>1.00</priority>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://davidjuan.github.io/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://davidjuan.github.io/en/"/>
     </url>
 </urlset>
