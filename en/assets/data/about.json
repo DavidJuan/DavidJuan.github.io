@@ -1,12 +1,48 @@
 {
+  "contact": {
+    "name": "David Juan Freire da Silva",
+    "email": "davidjfds@gmail.com",
+    "phone": "+55 11 98405-5268",
+    "linkedin": "linkedin.com/in/david-juan",
+    "github": "github.com/DavidJuan",
+    "portfolio": "davidjuan.github.io"
+  },
   "internationalizations": [
     {
       "language": "pt",
-      "description": "Iniciei minha carreira em desenvolvimento de software em 2014 com a linguagem C++, atuando em programação de robôs, dispositivos de segurança de máquinas e software de modelagem 3D.</br></br> Em 2016 migrei para linguagem C# sendo a maior parte de minha atuação na plataforma ASP.Net Core com biblioteca WebApi. Neste período desenvolvi softwares ERP para área fiscal e contábil, sistemas de gestão hospitalar e planos de saúde, e ultimamente atuando como Desenvolvedor Fullstack utilizando framework Angular no frontend em aplicações para gestão de contratos de clientes de sistema bancário.</br></br> Sempre em busca de novos desafios, mantenho constante contato com novas tecnologias a fim de consolidar e ampliar meu conhecimento"
+      "kicker": "Sobre mim",
+      "headline": "Engenheiro de Software Sênior & Arquiteto Backend .NET / C#",
+      "tagline": "Microsserviços • DDD • Clean Architecture • CQRS | AWS & Oracle Cloud (OCI) | APIs REST • Segurança (OAuth2 / JWT / RBAC)",
+      "location": "Diadema, São Paulo, Brasil · Aberto a remoto e híbrido",
+      "description": "Engenheiro de Software Sênior e Arquiteto Backend com cerca de 10 anos de experiência em <b>.NET / C#</b>, construindo sistemas críticos para os setores <b>bancário</b> (Itaú BBA), <b>saúde suplementar</b> (TOTVS), <b>ERP fiscal</b> e <b>cloud computing</b> (Skyone).<br><br>Hoje sou arquiteto e desenvolvedor principal da <b>EasySky</b>, plataforma enterprise de orquestração de infraestrutura em nuvem integrada à <b>Oracle Cloud Infrastructure (OCI)</b>, com API REST de <b>220+ endpoints</b> em Clean Architecture e DDD.<br><br>Meu foco é desenhar sistemas que o time consegue manter e evoluir: arquitetura bem definida, contratos de API claros (OpenAPI), segurança desde o início (OWASP, NIST) e padrões de engenharia que encurtam o onboarding e elevam a qualidade das entregas.",
+      "metrics": [
+        { "value": "10", "label": "anos com .NET / C#" },
+        { "value": "220+", "label": "endpoints REST na plataforma EasySky" },
+        { "value": "200+", "label": "componentes em Clean Architecture + DDD" },
+        { "value": "4", "label": "setores: banco, saúde, ERP e cloud" }
+      ],
+      "cv": {
+        "download": "Baixar currículo (PDF)",
+        "other": "English version (PDF)"
+      }
     },
     {
       "language": "en",
-      "description": "I started my career in software development in 2014 with the C++ language, working in robot programming, machine safety devices and 3D modeling software.</br></br> At 2016 I migrated to C# language, most of my work on the ASP.Net Core platform with WebApi library. During this period I developed ERP software for tax and accounting, hospital management systems and health plans, and lately working as a Fullstack Developer using Angular framework on the frontend in applications for managing contracts with banking system customers.</br></br> I am always looking for new challenges, I keep in constant contact with new technologies in order to consolidate and expand my knowledge."
+      "kicker": "About me",
+      "headline": "Senior Software Engineer & .NET / C# Backend Architect",
+      "tagline": "Microservices • DDD • Clean Architecture • CQRS | AWS & Oracle Cloud (OCI) | REST APIs • Security (OAuth2 / JWT / RBAC)",
+      "location": "Diadema, São Paulo, Brazil · Open to remote and hybrid roles",
+      "description": "Senior Software Engineer and Backend Architect with about 10 years of experience in <b>.NET / C#</b>, building mission-critical systems for <b>banking</b> (Itaú BBA), <b>healthcare</b> (TOTVS), <b>tax ERP</b> and <b>cloud computing</b> (Skyone).<br><br>I am currently the architect and lead developer of <b>EasySky</b>, an enterprise cloud infrastructure orchestration platform natively integrated with <b>Oracle Cloud Infrastructure (OCI)</b>, powered by a <b>220+ endpoint</b> REST API built on Clean Architecture and DDD.<br><br>I focus on designing systems teams can maintain and evolve: well-defined architecture, clear API contracts (OpenAPI), security by design (OWASP, NIST) and engineering standards that shorten onboarding and raise delivery quality.",
+      "metrics": [
+        { "value": "10", "label": "years of .NET / C#" },
+        { "value": "220+", "label": "REST endpoints on the EasySky platform" },
+        { "value": "200+", "label": "components on Clean Architecture + DDD" },
+        { "value": "4", "label": "industries: banking, healthcare, ERP and cloud" }
+      ],
+      "cv": {
+        "download": "Download resume (PDF)",
+        "other": "Versão em português (PDF)"
+      }
     }
   ],
   "medias": [
@@ -19,24 +55,6 @@
       "icon": "github",
       "title": "GitHub",
       "http": "https://github.com/DavidJuan"
-    }
-  ],
-  "hobbies": [
-    {
-      "icon": "gamepad",
-      "title": "Playing"
-    },
-    {
-      "icon": "dumbbell",
-      "title": "Gym"
-    },
-    {
-      "icon": "table-tennis",
-      "title": "Table Tennis"
-    },
-    {
-      "icon": "book",
-      "title": "Read"
     }
   ]
 }
