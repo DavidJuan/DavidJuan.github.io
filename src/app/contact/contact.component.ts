@@ -35,15 +35,17 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup = new FormGroup({
     name: new FormControl("",[
       Validators.required,
-      Validators.pattern("[A-zÀ-ú ]*")
+      Validators.pattern("^[A-Za-zÀ-ÖØ-öø-ÿ' .-]+$")
     ]),
     email: new FormControl("",[
       Validators.required,
-      Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+      Validators.pattern("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")
     ]),
     message: new FormControl("",[
       Validators.required
-    ])
+    ]),
+    // Honeypot: hidden from people, bots that fill it in are discarded by FormSubmit.
+    honeypot: new FormControl("")
   });
 
   get senderEmail() {
@@ -76,11 +78,10 @@ export class ContactComponent implements OnInit {
   }
 
   saveContact(contact: Contact) {
-    this.contactService.createContact(contact).then(() => {
-      this.displayUserInterfaceMessage(true);
-    })
-    .catch(error => {
-      this.displayUserInterfaceMessage(false);
+    const subject = $localize`:contact@@mailSubject:New message from davidjuan.github.io`;
+    this.contactService.sendContact(contact, `${subject} - ${contact.name}`).subscribe({
+      next: () => this.displayUserInterfaceMessage(true),
+      error: () => this.displayUserInterfaceMessage(false)
     });
   }
 
@@ -88,7 +89,10 @@ export class ContactComponent implements OnInit {
     this.isLoading = false;
     this.hasBeenSubmited = true;
     this.feedbackStatus = hasBeenSuccessfuly? "success" : "error";
-    this.contactForm.reset();
+    // Keep what the visitor typed when sending fails, so the message is not lost.
+    if (hasBeenSuccessfuly) {
+      this.contactForm.reset();
+    }
   }
 
   closeFeedbackMessage() {
@@ -97,12 +101,16 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(contactForm) {
+    if (this.contactForm.invalid || this.isLoading) {
+      return;
+    }
     this.isLoading = true;
 
     const contactValues: Contact = {
       name: this.senderName.value,
       email: this.senderEmail.value,
       message: this.senderMessage.value,
+      honeypot: this.contactForm.get("honeypot").value,
       date: new Date()
     } as Contact;
 

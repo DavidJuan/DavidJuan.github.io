@@ -13,6 +13,9 @@ export const environment = {
     phone: "+55 11 98405-5268",
     location: "Diadema, São Paulo, Brazil",
   },
+  // Contact form messages are delivered by e-mail through FormSubmit (https://formsubmit.co).
+  // The first message sent triggers an "Activate Form" e-mail that must be confirmed once.
+  contactFormEndpoint: "https://formsubmit.co/ajax/davidjfds@gmail.com",
   // replace the dummy data below with the real firebase configs
   firebaseConfig: {
     apiKey: "AIzaSyBf9N-hi3XYbjV70S7zIDoKYYu2ArPcpNs",

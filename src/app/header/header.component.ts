@@ -4,7 +4,6 @@ import {
   Input,
   ViewChild,
   ElementRef,
-  Renderer2,
   Inject,
   LOCALE_ID,
   AfterViewInit,
@@ -37,12 +36,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   faDownload: IconDefinition;
   resume: IResumeFile;
 
-  @ViewChild("nav") nav: ElementRef;
   @ViewChild("shareBtn") shareBtn: ElementRef;
 
   constructor(
     @Inject(LOCALE_ID) public locale: string,
-    private renderer: Renderer2,
     ngNavigatorShareService: NgNavigatorShareService
   ) {
     this.ngNavigatorShareService = ngNavigatorShareService;
@@ -66,7 +63,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   @Input()
   set activeSection(value: any) {
     this._activeSection = value;
-    this.updateNavigation();
   }
 
   ngAfterViewInit() {
@@ -82,25 +78,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.faDownload = faDownload;
     // The resume follows the language of the current build (/en/ or /pt/).
     this.resume = resumeFile(this.locale);
-  }
-
-  private updateNavigation() {
-    if (this._activeSection && this.renderer) {
-      // Remove any selected anchor
-      const activePreviousElem =
-        this.nav.nativeElement.querySelector("a.active");
-
-      if (activePreviousElem) {
-        this.renderer.removeClass(activePreviousElem, "active");
-      }
-
-      const targetElem = this.nav.nativeElement.querySelector(
-        `a[href^="#${this._activeSection}"]`
-      );
-      if (targetElem) {
-        this.renderer.addClass(targetElem, "active");
-      }
-    }
   }
 
   /*

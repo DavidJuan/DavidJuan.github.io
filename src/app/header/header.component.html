@@ -26,18 +26,22 @@
     <ul>
       <li><a (click)="resetMenu()"
            href="#about"
+           [class.active]="activeSection === 'about'"
            i18n="nav@@aboutMe"
            itemprop="url"><span itemprop="name">About me</span></a></li>
       <li><a (click)="resetMenu()"
            href="#experience"
+           [class.active]="activeSection === 'experience'"
            i18n="nav@@experiences"
            itemprop="url"><span itemprop="name">Experiences</span></a></li>
       <li><a (click)="resetMenu()"
            href="#skills"
+           [class.active]="activeSection === 'skills'"
            i18n="nav@@skills"
            itemprop="url"><span itemprop="name">Skills</span></a></li>
       <li><a (click)="resetMenu()"
            href="#contact"
+           [class.active]="activeSection === 'contact'"
            i18n="nav@@contact"
            itemprop="url"><span itemprop="name">Contact</span></a></li>
       <li class="cv-item"><a (click)="resetMenu()"

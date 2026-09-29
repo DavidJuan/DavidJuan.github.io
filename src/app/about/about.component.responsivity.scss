@@ -9,10 +9,6 @@
   #about {
     padding-top: 7rem;
   }
-
-  .metrics {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media screen and (max-width: 960px) {
@@ -38,8 +34,7 @@
     padding-bottom: 5rem;
   }
 
-  .about-container,
-  .metrics {
+  .about-container {
     width: calc(100vw - 32px);
   }
 
@@ -52,30 +47,14 @@
       .tagline { font-size: 14px; }
       .text { font-size: 15px; }
 
-      .actions .btn {
-        width: 100%;
+      .actions {
         justify-content: center;
-      }
-
-      .social-media {
-        margin: 0.4em auto 0;
       }
     }
 
     .second-column .profile-picture {
       width: 170px;
       height: 170px;
-    }
-  }
-
-  .metrics {
-    gap: 0.8em;
-
-    li {
-      padding: 1em;
-
-      strong { font-size: 26px; }
-      span { font-size: 13px; }
     }
   }
 }

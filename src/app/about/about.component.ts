@@ -6,7 +6,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { Subscription } from "rxjs";
 import { environment } from "../../environments/environment";
-import { IResumeFile, pickLocale, resumeFile } from "../core/utils";
+import { pickLocale } from "../core/utils";
 
 @Component({
   selector: "app-about",
@@ -21,9 +21,6 @@ export class AboutComponent implements OnInit, OnDestroy {
   aboutData: IAbout;
   content: IAboutInternationalization;
 
-  resume: IResumeFile;
-  otherResume: IResumeFile;
-
   constructor(
     private dataService: DataService,
     private library: FaIconLibrary,
@@ -34,8 +31,6 @@ export class AboutComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.name = environment.personal.name;
-    this.resume = resumeFile(this.locale);
-    this.otherResume = resumeFile(this.locale === "pt" ? "en" : "pt");
 
     // Fetches the About information from the Data Service (about.json file).
     this.subscription = this.dataService.getAbout()

@@ -92,13 +92,12 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 0.8em;
-      margin-top: 2em;
+      margin-top: 1.6em;
     }
 
     .social-media {
       display: flex;
-      gap: 0.6em;
-      margin-left: 0.4em;
+      gap: 0.8em;
 
       .icon {
         font-size: 30px;
@@ -123,41 +122,6 @@
       background-image: url("../../assets/template/about/david-profile-photo.jpg");
       border: 8px solid #fff;
       box-shadow: 0 0 0 2px var(--c-accent-soft), var(--shadow-card);
-    }
-  }
-}
-
-.metrics {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.2em;
-  width: 85vw;
-  max-width: 1400px;
-  margin: 1.6em 0 0;
-  padding: 0;
-  list-style: none;
-
-  li {
-    background: var(--c-card);
-    border: 1px solid var(--c-border);
-    border-radius: var(--radius);
-    padding: 1.2em 1.4em;
-    box-shadow: 0 4px 14px -10px rgba(27, 36, 70, 0.25);
-
-    strong {
-      display: block;
-      font-size: 32px;
-      font-weight: 700;
-      color: var(--c-accent);
-      line-height: 1.1;
-    }
-
-    span {
-      display: block;
-      margin-top: 0.3em;
-      font-size: 14px;
-      color: var(--c-muted);
-      line-height: 1.4;
     }
   }
 }

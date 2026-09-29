@@ -17,6 +17,5 @@ app-header {
 }
 
 app-footer {
-    position: relative;
-    top: -3em;
+    display: block;
 }

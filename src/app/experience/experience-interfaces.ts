@@ -4,6 +4,7 @@ export interface IExperience {
     companyName: string;
     website?: string;
     logo?: string;
+    logoBackground?: string; // tile color for logos designed for dark backgrounds
     internationalizations: IExperienceInternationalization[];
     startAt: string; // For the purpose of stringifying MM-DD-YYYY date format
     endAt?: string;  // For the purpose of stringifying MM-DD-YYYY date format

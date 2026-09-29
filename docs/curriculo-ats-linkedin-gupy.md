@@ -71,7 +71,7 @@ Arquiteto e desenvolvedor principal da EasySky, plataforma enterprise de orquest
 - Definir os guias de arquitetura e padrões de desenvolvimento adotados por todo o time de engenharia, reduzindo a curva de onboarding de novos desenvolvedores.
 - Padronizar os contratos de API com documentação OpenAPI avançada e filtros customizados, acelerando a integração com o frontend e consumidores da API.
 
-**Stack:** .NET, C#, OCI SDK, Oracle Cloud (OCI), Clean Architecture, DDD, APIs REST, OpenAPI, RBAC, JWT, OWASP
+**Stack:** .NET, C#, OCI SDK, Oracle Cloud (OCI), Clean Architecture, DDD, APIs REST, OpenAPI, RBAC, JWT, OWASP, RabbitMQ, Docker, Git, Scrum
 
 ### Itaú BBA — Engenheiro de Software Full Stack
 *ago 2021 – jan 2025 · São Paulo, SP*
@@ -84,7 +84,7 @@ Sistemas de recuperação de crédito: processos críticos para o banco, com gra
 - Participar das decisões de arquitetura e das melhorias de performance da plataforma em ambiente bancário regulado.
 - Desenvolver interfaces em Angular para as áreas de negócio, atuando de ponta a ponta (full stack).
 
-**Stack:** .NET Core, C#, Microsserviços, CQRS, AWS Lambda, Amazon S3, SQL Server, MongoDB, Angular, TypeScript
+**Stack:** .NET Core, C#, Microsserviços, CQRS, AWS Lambda, Amazon S3, SQL Server, MongoDB, Angular, TypeScript, Docker, Git, Scrum
 
 ### TOTVS — Desenvolvedor de Software
 *nov 2019 – ago 2021 · São Paulo, SP*
@@ -96,7 +96,7 @@ Sistemas para operadoras de planos de saúde, atendendo aos requisitos regulató
 - Desenvolver e documentar APIs REST com OpenAPI, simplificando a integração com parceiros e sistemas legados.
 - Construir interfaces em Angular e TypeScript, entregando funcionalidades de ponta a ponta.
 
-**Stack:** .NET Core, C#, Java, AdvPL, SQL Server, PostgreSQL, ETL, GoodData, OpenAPI, TDD, Angular
+**Stack:** .NET Core, C#, Java, AdvPL, SQL Server, PostgreSQL, ETL, GoodData, OpenAPI, TDD, Angular, Git, Scrum
 
 ### Grupo Módulos — Desenvolvedor de Software .NET
 *dez 2016 – nov 2019 · Santo André, SP*
@@ -107,7 +107,7 @@ ERP para pequenas e médias empresas integrado à emissão de notas fiscais elet
 - Integrar o ERP aos WebServices SOAP/REST da Receita Federal para emissão de NF-e e NFS-e, automatizando obrigações fiscais dos clientes diretamente pelo sistema.
 - Construir a camada de dados com Entity Framework e stored procedures em SQL Server, otimizando consultas das rotinas de maior volume do ERP.
 
-**Stack:** C#, .NET Framework, Entity Framework, SQL Server, SOLID, DDD
+**Stack:** C#, .NET Framework, Entity Framework, SQL Server, SOLID, DDD, Git, Scrum
 
 ---
 

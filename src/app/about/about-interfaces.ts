@@ -20,16 +20,6 @@ export interface IAboutInternationalization {
     tagline: string;
     location: string;
     description: string;
-    metrics?: IAboutMetric[];
-    cv: {
-        download: string;
-        other: string;
-    };
-}
-
-export interface IAboutMetric {
-    value: string;
-    label: string;
 }
 
 export interface IAboutMedia {

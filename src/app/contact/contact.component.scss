@@ -1,5 +1,4 @@
 #contact {
-  top: -4em;
   position: relative;
   justify-content: center;
   background-color: var(--c-bg);
@@ -12,8 +11,12 @@
     border-radius: 15px;
     z-index: 3;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(640px, calc(100vw - 32px));
+    box-sizing: border-box;
+    text-align: center;
     box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
-    margin: 0 1em;
 
     .icon {
       margin-left: 15px;
@@ -94,16 +97,20 @@
   .container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 85vw;
     max-width: 1400px;
     opacity: 1;
 
     .left-side {
-      flex-grow: 4;
+      flex: 0 1 720px;
+      width: 100%;
       z-index: 2;
       margin-bottom: 1em;
 
       .title {
+        text-align: center;
+
         h1 {
           font-size: 42px;
           font-weight: 600;
@@ -113,6 +120,9 @@
 
       .top-container {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
         background-color: #fff;
         border: 1px solid var(--c-border);
         border-radius: var(--radius);
@@ -243,6 +253,14 @@
             font-weight: 600;
             margin-bottom: 5px;
             font-family: "Montserrat", sans-serif;
+          }
+
+          .honeypot {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
           }
 
           &.loading {

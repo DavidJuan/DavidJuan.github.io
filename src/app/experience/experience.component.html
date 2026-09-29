@@ -71,9 +71,16 @@
                 data-id="{{ exp.id }}">
               <div class="header-block">
                 <div class="logo-block">
-                  <img *ngIf="exp.logo; else initialsBadge"
-                       src="{{ exp.logo }}"
-                       alt="{{ exp.companyName }}">
+                  <a *ngIf="exp.logo; else initialsBadge"
+                     class="logo-tile"
+                     [style.backgroundColor]="exp.logoBackground || null"
+                     href="{{ exp.website }}"
+                     target="_blank"
+                     rel="noopener">
+                    <img src="{{ exp.logo }}"
+                         alt="{{ exp.companyName }}"
+                         loading="lazy">
+                  </a>
                   <ng-template #initialsBadge>
                     <span class="initials"
                           aria-hidden="true">{{ initials(exp.companyName) }}</span>
