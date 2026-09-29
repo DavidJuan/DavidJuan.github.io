@@ -10,7 +10,6 @@ export const environment = {
     name: "David Juan Freire da Silva",
     birth: "1991-09-25",
     email: "davidjfds@gmail.com",
-    phone: "+55 11 98405-5268",
     location: "Diadema, São Paulo, Brazil",
   },
   // Contact form messages are delivered by e-mail through FormSubmit (https://formsubmit.co).

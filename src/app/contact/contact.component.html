@@ -37,12 +37,6 @@
                      title="Email"></fa-icon><a href="mailto:{{ email }}"
                itemprop="email">{{ email }}</a>
           </p>
-          <p class="phone"
-             *ngIf="phone">
-            <fa-icon [icon]="faPhone"
-                     class="icon"
-                     title="Phone"></fa-icon><span itemprop="telephone">{{ phone }}</span>
-          </p>
           <p class="location"
              *ngIf="location">
             <fa-icon [icon]="faMapMarkerAlt"

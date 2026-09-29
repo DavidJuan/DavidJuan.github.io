@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import {
-  faEnvelope, faPhone, faTimes,
+  faEnvelope, faTimes,
   faMapMarkerAlt, IconDefinition
 } from "@fortawesome/free-solid-svg-icons";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
@@ -18,11 +18,9 @@ export class ContactComponent implements OnInit {
 
   name: string;
   email: string;
-  phone: string;
   location: string;
 
   faEnvelope: IconDefinition;
-  faPhone: IconDefinition;
   faMapMarkerAlt: IconDefinition;
   faTimes: IconDefinition;
 
@@ -68,11 +66,9 @@ export class ContactComponent implements OnInit {
     const personalData = environment.personal;
     this.name = personalData.name;
     this.email = personalData.email;
-    this.phone = personalData.phone;
     this.location = personalData.location;
 
     this.faEnvelope = faEnvelope;
-    this.faPhone = faPhone;
     this.faMapMarkerAlt = faMapMarkerAlt;
     this.faTimes = faTimes;
   }

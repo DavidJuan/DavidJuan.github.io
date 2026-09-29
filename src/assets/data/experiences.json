@@ -113,6 +113,7 @@
     "endAt": "01-15-2025",
     "companyName": "Itaú BBA",
     "website": "https://www.itaubba.com.br/",
+    "logo": "assets/template/experience/logo/itau-logo.png",
     "internationalizations": [
       {
         "language": "pt",
