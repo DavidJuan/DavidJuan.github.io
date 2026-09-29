@@ -5,7 +5,7 @@
 
 // primary background and font
 $primary_font: "Montserrat", sans-serif;
-$primary_background: #d4e7fe;
+$primary_background: #f3f6fc;
 
 // font-weight
 $thin:100;
@@ -22,6 +22,22 @@ $primary-fs: 16px;
 $font-md: 18px;
 $font-lg: 20px;
 
+// Design tokens shared by every section.
+:root {
+    --c-ink: #1b2446;
+    --c-brand: #222f5c;
+    --c-accent: #3563e9;
+    --c-accent-hover: #2450cf;
+    --c-accent-soft: #e8eefd;
+    --c-muted: #5e6788;
+    --c-subtle: #8a92ad;
+    --c-bg: #{$primary_background};
+    --c-card: #ffffff;
+    --c-border: #e2e8f4;
+    --shadow-card: 0 10px 30px -12px rgba(27, 36, 70, 0.18);
+    --radius: 16px;
+}
+
 html, body {
     height: 100%;
     background: $primary_background;
@@ -37,4 +53,38 @@ section {
     display: flex;
 }
 
-app-welcome, app-experience, app-about, app-posts, app-contact { display: block; }
+app-welcome, app-experience, app-about, app-skills, app-contact { display: block; }
+
+// Call-to-action buttons (resume download, etc.)
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55em;
+    padding: 0.8em 1.3em;
+    border-radius: 999px;
+    font-family: $primary_font;
+    font-size: 15px;
+    font-weight: $semi-bold;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+
+    &:hover { transform: translateY(-1px); }
+    &:focus-visible { outline: 3px solid var(--c-accent-soft); outline-offset: 2px; }
+
+    &.btn-primary {
+        background-color: var(--c-accent);
+        color: #fff;
+        box-shadow: 0 8px 20px -8px rgba(53, 99, 233, 0.7);
+
+        &:hover { background-color: var(--c-accent-hover); }
+    }
+
+    &.btn-secondary {
+        background-color: var(--c-accent-soft);
+        color: var(--c-brand);
+
+        &:hover { background-color: #dbe4fb; }
+    }
+}

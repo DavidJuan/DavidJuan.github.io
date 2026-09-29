@@ -21,9 +21,10 @@ header {
       width: 125px;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 35px;
+      font-size: 30px;
       font-weight: 700;
-      color: #222f5c;
+      letter-spacing: 0.02em;
+      color: var(--c-ink);
     }
   }
 
@@ -43,24 +44,36 @@ header {
         a {
           text-transform: capitalize;
           text-decoration: none;
-          font-size: 20px;
+          font-size: 17px;
           font-weight: 600;
-          color: #222f5c;
-          padding: 14px;
-          border-radius: 15px;
+          color: var(--c-brand);
+          padding: 10px 16px;
+          border-radius: 999px;
           transition: 0.3s;
 
           &:not(.active):hover {
-            background-color: #fff;
-            -webkit-box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
-            box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
+            background-color: var(--c-accent-soft);
           }
         }
 
         .active {
-          background-color: #222f5c;
+          background-color: var(--c-brand);
           color: #fff;
           font-weight: 600;
+        }
+
+        a.cv-download {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5em;
+          text-transform: none;
+          background-color: var(--c-accent);
+          color: #fff;
+          box-shadow: 0 8px 20px -8px rgba(53, 99, 233, 0.7);
+
+          &:not(.active):hover {
+            background-color: var(--c-accent-hover);
+          }
         }
       }
     }
@@ -90,7 +103,7 @@ header {
             margin: 0 15px;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 600;
             color: #222f5c59;
             transition: 0.3s;

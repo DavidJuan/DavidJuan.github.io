@@ -261,6 +261,78 @@
         </context-group>
         <note priority="1" from="description">dialog</note>
       </trans-unit>
+      <trans-unit id="skills" datatype="html">
+        <source>Skills</source>
+        <target>Skills</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">nav</note>
+      </trans-unit>
+      <trans-unit id="downloadCv" datatype="html">
+        <source>Download CV</source>
+        <target>Download CV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">nav</note>
+      </trans-unit>
+      <trans-unit id="downloadCvTitle" datatype="html">
+        <source>Download resume as PDF</source>
+        <target>Download resume as PDF</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">nav</note>
+      </trans-unit>
+      <trans-unit id="shareTitle" datatype="html">
+        <source>David Juan - Senior Software Engineer | .NET / C# Backend Architect</source>
+        <target>David Juan - Senior Software Engineer | .NET / C# Backend Architect</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">share</note>
+      </trans-unit>
+      <trans-unit id="shareText" datatype="html">
+        <source>Senior Software Engineer and .NET / C# Backend Architect with 10 years of experience in microservices, DDD, Clean Architecture, AWS and Oracle Cloud. Check out my resume!</source>
+        <target>Senior Software Engineer and .NET / C# Backend Architect with 10 years of experience in microservices, DDD, Clean Architecture, AWS and Oracle Cloud. Check out my resume!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">share</note>
+      </trans-unit>
+      <trans-unit id="pageTitle" datatype="html">
+        <source>David Juan | Senior Software Engineer &amp; .NET / C# Backend Architect</source>
+        <target>David Juan | Senior Software Engineer &amp; .NET / C# Backend Architect</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">meta</note>
+      </trans-unit>
+      <trans-unit id="pageDescription" datatype="html">
+        <source>Senior Software Engineer and Backend Architect with 10 years of .NET / C# experience: microservices, DDD, Clean Architecture, CQRS, AWS and Oracle Cloud (OCI). Download my resume in English or Portuguese.</source>
+        <target>Senior Software Engineer and Backend Architect with 10 years of .NET / C# experience: microservices, DDD, Clean Architecture, CQRS, AWS and Oracle Cloud (OCI). Download my resume in English or Portuguese.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">meta</note>
+      </trans-unit>
+      <trans-unit id="pageKeywords" datatype="html">
+        <source>Senior Software Engineer, Backend Architect, Software Architect, .NET Developer, C# Developer, ASP.NET Core, Microservices, DDD, Clean Architecture, CQRS, REST API, AWS, Oracle Cloud Infrastructure, OCI, SQL Server, PostgreSQL, MongoDB, OAuth2, JWT, Angular, David Juan, David Juan resume</source>
+        <target>Senior Software Engineer, Backend Architect, Software Architect, .NET Developer, C# Developer, ASP.NET Core, Microservices, DDD, Clean Architecture, CQRS, REST API, AWS, Oracle Cloud Infrastructure, OCI, SQL Server, PostgreSQL, MongoDB, OAuth2, JWT, Angular, David Juan, David Juan resume</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">meta</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

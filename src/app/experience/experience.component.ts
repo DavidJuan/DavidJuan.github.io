@@ -1,7 +1,8 @@
-import { Component, OnInit, ElementRef, Renderer2, ViewChild } from "@angular/core";
+import { Component, OnInit, ElementRef, Renderer2, ViewChild, Inject, LOCALE_ID } from "@angular/core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { IExperience } from "./experience-interfaces";
+import { IExperience, IExperienceInternationalization } from "./experience-interfaces";
+import { pickLocale } from "../core/utils";
 import { DataService } from "../core/data.service";
 import { SorterService } from "../core/sorter.service";
 import { FaIconLibrary } from "@fortawesome/angular-fontawesome";
@@ -36,7 +37,8 @@ export class ExperienceComponent extends AbstractSwipeSection implements OnInit 
     private dataService: DataService,
     private sortService: SorterService,
     private renderer: Renderer2,
-    private library: FaIconLibrary
+    private library: FaIconLibrary,
+    @Inject(LOCALE_ID) public locale: string
   ) {
     super();
     library.addIconPacks(fas, fab);
@@ -54,8 +56,22 @@ export class ExperienceComponent extends AbstractSwipeSection implements OnInit 
           this.experiencesOrdered.sort(this.sortService.sort("position", "desc"));       
           this.backgroundUrl = this.retrieveBackgroundUrl();
           this.updateMobileNavigationView();
-          this.preloadBounderyImages(experiences.map(xp => xp.backgroundUrl));
+          this.preloadBounderyImages(experiences.map(xp => xp.backgroundUrl).filter(url => !!url));
         });
+  }
+
+  public localized(experience: IExperience): IExperienceInternationalization {
+    return pickLocale(experience.internationalizations, this.locale);
+  }
+
+  // Company monogram shown when the experience has no logo, e.g. "Itaú BBA" -> "IB".
+  public initials(companyName: string): string {
+    return (companyName || "")
+      .split(/\s+/)
+      .filter(word => !!word)
+      .slice(0, 2)
+      .map(word => word.charAt(0).toUpperCase())
+      .join("");
   }
 
   public disablePreviousNavigation(): boolean {
@@ -137,7 +153,7 @@ export class ExperienceComponent extends AbstractSwipeSection implements OnInit 
   }
 
   private retrieveBackgroundUrl(): string {
-    return this.experiences[this.currentPosition - 1].backgroundUrl;
+    return this.experiences[this.currentPosition - 1]?.backgroundUrl;
   }
 
   private updateMobileNavigationView() {

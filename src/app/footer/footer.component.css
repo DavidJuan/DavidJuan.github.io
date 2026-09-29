@@ -1,5 +1,5 @@
 footer {
-    background-color: #3a5f8e;
+    background-color: var(--c-ink);
     display: flex;
     flex-wrap: wrap;
 }

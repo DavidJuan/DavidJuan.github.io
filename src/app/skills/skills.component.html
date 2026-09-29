@@ -1,0 +1,62 @@
+<section id="skills">
+  <div class="container"
+       *ngIf="content">
+    <div class="title">
+      <h1>{{ content.title }}</h1>
+      <p class="synopsis">{{ content.synopsis }}</p>
+    </div>
+
+    <div class="grid">
+      <article class="card"
+               *ngFor="let category of content.categories">
+        <header>
+          <span class="badge"><fa-icon [icon]="['fas', category.icon]"></fa-icon></span>
+          <h2>{{ category.title }}</h2>
+        </header>
+        <ul class="chips">
+          <li *ngFor="let item of category.items"
+              itemprop="knowsAbout">{{ item }}</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="grid extras">
+      <article class="card">
+        <header>
+          <span class="badge"><fa-icon [icon]="['fas', 'certificate']"></fa-icon></span>
+          <h2>{{ content.certificationsTitle }}</h2>
+        </header>
+        <ul class="list">
+          <li *ngFor="let certification of content.certifications">
+            <strong>{{ certification.title }}</strong>
+            <span *ngIf="certification.issuer">{{ certification.issuer }}</span>
+          </li>
+        </ul>
+      </article>
+      <article class="card">
+        <header>
+          <span class="badge"><fa-icon [icon]="['fas', 'graduation-cap']"></fa-icon></span>
+          <h2>{{ content.educationTitle }}</h2>
+        </header>
+        <ul class="list">
+          <li *ngFor="let education of content.education">
+            <strong>{{ education.title }}</strong>
+            <span>{{ education.institution }} · {{ education.period }}</span>
+          </li>
+        </ul>
+      </article>
+      <article class="card">
+        <header>
+          <span class="badge"><fa-icon [icon]="['fas', 'language']"></fa-icon></span>
+          <h2>{{ content.languagesTitle }}</h2>
+        </header>
+        <ul class="list">
+          <li *ngFor="let language of content.languages">
+            <strong>{{ language.title }}</strong>
+            <span>{{ language.level }}</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>

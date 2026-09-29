@@ -27,12 +27,12 @@
                 font-size: 30px;
             }
 
-            .role, .period, .location {
-                font-size: 18px;
+            .role {
+                font-size: 17px;
             }
 
             .description {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
 
@@ -148,21 +148,30 @@
                 font-size: 28px;
             }
 
-            .header-block .logo-block {
+            .header-block {
+                flex-direction: column;
+                gap: 0.8em;
+
+                .logo-block {
+                    justify-content: center;
+                }
+            }
+
+            .company-name, .role {
+                text-align: center;
+            }
+
+            .meta {
                 justify-content: center;
             }
 
-            .company-name, .role, .period, .location {
-                text-align: center;
+            .description {
+                font-size: 15px;
             }
 
             .social-media {
                 text-align: center;
-                margin-top: 2em;
-
-                .icon {
-                    font-size: 50px;
-                }
+                margin-top: 1.5em;
             }
         }
     }

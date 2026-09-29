@@ -4,14 +4,16 @@ app-header {
     position: absolute;
     z-index: 1001;
     width: 100%;
-    padding: 1em 0;
+    padding: 0.8em 0;
     transition: 0.3s;
 }
 
 .sticky {
     position: fixed;
-    background-color: #fff;
-    box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.43);
+    background-color: rgba(255, 255, 255, 0.92);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 24px -12px rgba(27, 36, 70, 0.35);
 }
 
 app-footer {

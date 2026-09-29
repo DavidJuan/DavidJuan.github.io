@@ -2,7 +2,8 @@
   top: -4em;
   position: relative;
   justify-content: center;
-  background-color: #d4e7fe;
+  background-color: var(--c-bg);
+  padding-top: 2em;
 
   .feedback-container {
     display: none;
@@ -113,8 +114,9 @@
       .top-container {
         display: flex;
         background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
+        border: 1px solid var(--c-border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-card);
         padding: 1em;
 
         .picture {
@@ -158,8 +160,9 @@
 
       .bottom-container {
         background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
+        border: 1px solid var(--c-border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-card);
         padding: 1em;
         margin-top: 1em;
 
@@ -198,8 +201,8 @@
             padding: 10px 0 10px 15px;
             border: 0;
             border-radius: 15px;
-            background-color: #f6f6f6;
-            color: #848484;
+            background-color: var(--c-bg);
+            color: var(--c-brand);
             font-weight: 600;
             margin-bottom: 5px;
 
@@ -209,12 +212,14 @@
           }
 
           input[type="submit"] {
-            background-color: #70c576;
-            font-size: 22px;
+            background-color: var(--c-accent);
+            font-size: 17px;
             color: #fff;
             padding: 1em;
             border: 0;
-            border-radius: 15px;
+            border-radius: 999px;
+            letter-spacing: 0.06em;
+            box-shadow: 0 8px 20px -8px rgba(53, 99, 233, 0.7);
             text-transform: uppercase;
             font-weight: 600;
             cursor: pointer;
@@ -224,8 +229,7 @@
             }
 
             &:hover {
-              color: #2c612f;
-              background-color: #68bd6e;
+              background-color: var(--c-accent-hover);
             }
           }
 
@@ -234,8 +238,8 @@
             padding: 10px 0 10px 15px;
             border: 0;
             border-radius: 15px;
-            background-color: #f6f6f6;
-            color: #848484;
+            background-color: var(--c-bg);
+            color: var(--c-brand);
             font-weight: 600;
             margin-bottom: 5px;
             font-family: "Montserrat", sans-serif;

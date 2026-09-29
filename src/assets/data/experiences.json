@@ -2,218 +2,211 @@
   {
     "id": 1,
     "position": 1,
-    "startAt": "05-02-2014",
-    "endAt": "03-24-2016",
-    "companyName": "ESS Engenharia de Sistemas de Segurança",
-    "internationalizations": [
-      {
-        "language": "pt",
-        "city": "São Caetano do Sul",
-        "country": "Brasil",
-        "role": "Desenhista de Sistemas",
-        "description": "A <b> ESS Engenharia de Sistemas de Segurança</b> é uma empresa fundada em 2006, do ramo de automação industrial e focada em soluções de adequação de máquinas e processos às normas de segurança NR12. Presente em todos os segmentos industriais e trabalhando com as mais conceituadas marcas de equipamentos, a ESS integra as soluções de automação visando a maior proteção dos profissionais. <br><br>Na <b>ESS</b> minha atuação se resumiu a:<br> Programação de robôs e dispositivos utilizando linguagem C++ e CLP.<br>Integração entre softwares via API aplicando arquitetura REST.<br>Projetos de automação e otimização de processos. <br>Projetos mecânicos e consultoria do software Autodesk Inventor."
-      },
-      {
-        "language": "en",
-        "city": "São Caetano do Sul",
-        "country": "Brazil",
-        "role": "Systems Designer",
-        "description": "<b>ESS Security Systems Engineering</b> is a company founded in 2006, in the field of industrial automation and focused on solutions for adapting machines and processes to NR12 safety standards. Present in all industrial segments and working with the most renowned brands of equipment, ESS integrates automation solutions aiming at the greater protection of professionals.<br><br>At ESS, my work was limited to:<br> Programming robots and devices using C++ and PLC languages.<br>Integration between software via API applying REST architecture.<br>Projects of automation and process optimization. <br>Mechanical design and consulting for Autodesk Inventor software."
-      }
-    ],
-    "technologies": [
-      "PHP",
-      "Zend Framework",
-      "Cake Framework",
-      "HTML",
-      "CSS",
-      "CSS3",
-      "Javascript",
-      "jQuery",
-      "AJAX",
-      "SOAP",
-      "Joomla",
-      "Wordpress",
-      "SVN",
-      "SQL",
-      "MySQL",
-      "PostgreSQL",
-      "Windows"
-    ],
-    "medias": [
-      {
-        "icon": "linkedin",
-        "title": "LinkedIn ESS",
-        "http": "https://www.linkedin.com/company/ess-engenhria-de-sistemas-de-segurança/about/"
-      }
-    ],
-    "backgroundUrl": "assets/template/experience/uberaba.jpg"
-  },
-  {
-    "id": 2,
-    "position": 2,
     "startAt": "12-02-2016",
     "endAt": "11-14-2019",
     "companyName": "Grupo Módulos",
+    "website": "https://www.grupomodulos.com.br/",
     "internationalizations": [
       {
         "language": "pt",
         "city": "Santo André",
         "country": "Brasil",
-        "role": "Analista de desenvolvimento de software",
-        "description": "O <b>Grupo Módulos</b> tem uma trajetória focada na distribuição de soluções voltadas à classe contábil e empresarial com a meta de inovar, a fim de proporcionar a todos os usuários uma interface agradável e didática.<br><br> No <b>Grupo Módulos</b> atuei em sistema de ERP para pequenas e médias empresas integrado a emissor de NF-e / NFS-e.<br>Desenvolvimento backend utilizando C# / .NET.<br>SOLID e DDD<br>Ferramentas ORM (Entity Framework)<br>Consumo de Web Services SOAP/REST da Receita Federal.<br>Stored Procedures em BD SQL Server."
+        "role": "Desenvolvedor de Software .NET",
+        "summary": "ERP para pequenas e médias empresas integrado à emissão de notas fiscais eletrônicas (NF-e e NFS-e).",
+        "highlights": [
+          "Desenvolver módulos backend de ERP em <b>C# / .NET Framework</b> aplicando <b>SOLID e DDD</b>, garantindo código coeso e extensível para as rotinas fiscais e contábeis.",
+          "Integrar o ERP aos <b>WebServices SOAP/REST da Receita Federal</b> para emissão de <b>NF-e e NFS-e</b>, automatizando obrigações fiscais dos clientes diretamente pelo sistema.",
+          "Construir a camada de dados com <b>Entity Framework</b> e <b>stored procedures em SQL Server</b>, otimizando consultas das rotinas de maior volume do ERP."
+        ]
       },
       {
         "language": "en",
         "city": "Santo André",
         "country": "Brazil",
-        "role": "Software development analyst",
-        "description": "The <b>Grupo Módulos</b> has a trajectory focused on the distribution of solutions aimed at the accounting and business class with the goal of innovating, in order to provide all users with a pleasant and didactic interface.<br><br>On <b>Grupo Módulos</b> I worked in an ERP system for small and medium-sized companies integrated with an NF-e / NFS-e issuer.<br>Backend development using C# / .NET.<br>SOLID and DDD<br>ORM Tools (Entity Framework)<br>Consumption of SOAP/REST Web Services from the Internal Revenue Service.<br>Stored Procedures in SQL Server DB."
+        "role": ".NET Software Developer",
+        "summary": "ERP for small and mid-sized businesses integrated with Brazilian electronic invoicing (NF-e and NFS-e).",
+        "highlights": [
+          "Developed ERP backend modules in <b>C# / .NET Framework</b> applying <b>SOLID and DDD</b>, keeping tax and accounting routines cohesive and extensible.",
+          "Integrated the ERP with the Brazilian Federal Revenue <b>SOAP/REST web services</b> to issue <b>NF-e and NFS-e</b> e-invoices, automating customers' tax compliance from within the system.",
+          "Built the data layer with <b>Entity Framework</b> and <b>SQL Server stored procedures</b>, optimizing the ERP's highest-volume queries."
+        ]
       }
     ],
     "technologies": [
-      "Magento 1.X",
-      "PHP",
-      "Zend Framework",
-      "HTML",
-      "CSS",
-      "CSS3",
-      "Javascript",
-      "jQuery",
+      "C#",
+      ".NET Framework",
+      "Entity Framework",
+      "SQL Server",
+      "SOLID",
+      "DDD",
       "SOAP",
-      "Wordpress",
-      "SVN",
-      "Payment Services",
-      "SSH",
-      "SSL",
-      "Linux"
+      "REST"
     ],
     "medias": [
       {
         "icon": "linkedin",
         "title": "LinkedIn Grupo Módulos",
         "http": "https://www.linkedin.com/company/grupo-modulos/"
-      },
-      {
-        "icon": "youtube",
-        "title": "Site Grupo Módulos",
-        "http": "https://www.grupomodulos.com.br/moderp"
       }
-    ],
-    "backgroundUrl": "assets/template/experience/rio.jpg"
+    ]
   },
   {
-    "id": 3,
-    "position": 3,
+    "id": 2,
+    "position": 2,
     "startAt": "11-21-2019",
     "endAt": "08-23-2021",
-    "companyName": "TOTVS S.A.",
+    "companyName": "TOTVS",
     "website": "https://www.totvs.com/",
-    "logo": "assets/template/experience/logo/totvs-white-logo.png",
     "internationalizations": [
       {
         "language": "pt",
         "city": "São Paulo",
         "country": "Brasil",
-        "role": "Analista de desenvolvimento de software",
-        "description": "Atualmente, 1 em cada 4 operadoras de planos de saúde no país, escolheram a TOTVS com parceira de tecnologia, utilizando o nosso erp para saúde. Temos uma equipe focada em compliance para atender todos os tipos de necessidades específicas do setor."
+        "role": "Desenvolvedor de Software",
+        "summary": "Sistemas para operadoras de planos de saúde, atendendo aos requisitos regulatórios da ANS.",
+        "highlights": [
+          "Desenvolver funcionalidades backend em <b>.NET Core, Java e AdvPL</b> com <b>TDD</b>, garantindo conformidade regulatória com a <b>ANS</b> e reduzindo regressões em módulos críticos.",
+          "Modelar dados em <b>SQL Server e PostgreSQL</b> e construir <b>pipelines de ETL</b> para Big Data com <b>GoodData</b>, habilitando indicadores analíticos para as operadoras.",
+          "Desenvolver e documentar <b>APIs REST com OpenAPI</b>, simplificando a integração com parceiros e sistemas legados.",
+          "Construir interfaces em <b>Angular e TypeScript</b>, entregando funcionalidades de ponta a ponta."
+        ]
       },
       {
         "language": "en",
         "city": "São Paulo",
         "country": "Brazil",
-        "role": "Mobile Developer",
-        "description": "At <b>Deevo Studio</b> is a company specializing in <i>web design</i> and <i>development</i> with an extensive portfolio of cases, the result of <i>20 years</i> of experience with other agencies and the corporate market. Their creations involve everything from brand development and visual identity to the creation of applications and websites, with a wide knowledge of Wordpress and Web Technologies.<br><br>At <i>Deevo Studio</i>, I had the chance to use the previously back-end knowledge combined with practical experience in JAVA development to accept the challenge to start an <i>Android Development Department</i> in the company, delivering complex <i>Android Applications</i> to companies in Brazil."
+        "role": "Software Developer",
+        "summary": "Systems for health insurance providers, compliant with ANS (Brazilian health regulator) requirements.",
+        "highlights": [
+          "Developed backend features in <b>.NET Core, Java and AdvPL</b> using <b>TDD</b>, ensuring <b>ANS</b> regulatory compliance and reducing regressions in critical modules.",
+          "Modeled data in <b>SQL Server and PostgreSQL</b> and built <b>ETL pipelines</b> for Big Data with <b>GoodData</b>, enabling analytics dashboards for health providers.",
+          "Designed and documented <b>REST APIs with OpenAPI</b>, simplifying integrations with partners and legacy systems.",
+          "Built front-end features with <b>Angular and TypeScript</b>, delivering functionality end to end."
+        ]
       }
     ],
     "technologies": [
-      "Java (Android)",
-      "Wordpress",
-      "HTML",
-      "HTML5",
-      "CSS",
-      "CSS3",
-      "Javascript",
-      "jQuery",
-      "Google APIs",
-      "SQL",
-      "MySQL",
-      "PHP",
-      "Slim Framework",
-      "Laravel",
-      "SMTP",
-      "Versioning Control",
-      "BitBucket",
-      "Jira",
-      "Git",
-      "Kanban framework"
-    ],
-    "medias": [
+      ".NET Core",
+      "C#",
+      "Java",
+      "AdvPL",
+      "SQL Server",
+      "PostgreSQL",
+      "ETL",
+      "GoodData",
+      "OpenAPI",
+      "TDD",
+      "Angular",
+      "TypeScript"
+    ]
+  },
+  {
+    "id": 3,
+    "position": 3,
+    "startAt": "08-30-2021",
+    "endAt": "01-15-2025",
+    "companyName": "Itaú BBA",
+    "website": "https://www.itaubba.com.br/",
+    "internationalizations": [
       {
-        "icon": "linkedin",
-        "title": "LinkedIn Deevo Studio",
-        "http": "https://www.linkedin.com/company/deevo/about/"
+        "language": "pt",
+        "city": "São Paulo",
+        "country": "Brasil",
+        "role": "Engenheiro de Software Full Stack",
+        "summary": "Sistemas de recuperação de crédito: processos críticos para o banco, com grandes volumes de dados e integração entre diversas áreas.",
+        "highlights": [
+          "Desenvolver <b>microsserviços em .NET Core / C#</b> e <b>APIs REST</b> corporativas integrando múltiplos sistemas internos da esteira de recuperação de crédito.",
+          "Implementar <b>CQRS</b> com <b>SQL Server</b> na escrita e <b>MongoDB</b> na leitura, isolando cargas transacionais para escalar consultas de alto volume.",
+          "Construir funções <b>serverless em AWS Lambda</b> integradas ao <b>Amazon S3</b>, desacoplando o processamento de arquivos com custo sob demanda.",
+          "Participar das decisões de <b>arquitetura</b> e das melhorias de <b>performance</b> da plataforma em ambiente bancário regulado.",
+          "Desenvolver interfaces em <b>Angular</b> para as áreas de negócio, atuando de ponta a ponta (full stack)."
+        ]
+      },
+      {
+        "language": "en",
+        "city": "São Paulo",
+        "country": "Brazil",
+        "role": "Full Stack Software Engineer",
+        "summary": "Credit recovery systems: business-critical processes for the bank, with large data volumes and integrations across many areas.",
+        "highlights": [
+          "Built <b>.NET Core / C# microservices</b> and enterprise <b>REST APIs</b> integrating multiple internal systems across the credit recovery pipeline.",
+          "Implemented <b>CQRS</b> with <b>SQL Server</b> for writes and <b>MongoDB</b> for reads, isolating transactional workloads to scale high-volume queries.",
+          "Built <b>serverless AWS Lambda</b> functions integrated with <b>Amazon S3</b>, decoupling file processing with pay-per-use cost.",
+          "Contributed to <b>architecture</b> decisions and <b>performance</b> improvements of the platform in a regulated banking environment.",
+          "Developed <b>Angular</b> interfaces for business teams, working end to end (full stack)."
+        ]
       }
     ],
-    "backgroundUrl": "assets/template/experience/sao-paulo.jpg"
+    "technologies": [
+      ".NET Core",
+      "C#",
+      "Microservices",
+      "CQRS",
+      "REST APIs",
+      "AWS Lambda",
+      "Amazon S3",
+      "SQL Server",
+      "MongoDB",
+      "Angular",
+      "TypeScript"
+    ]
   },
   {
     "id": 4,
     "position": 4,
-    "startAt": "08-02-2021",
-    "companyName": "Skydreamer",
-    "logo": "assets/template/experience/logo/skydreamer-logo.png",
+    "startAt": "01-20-2025",
+    "companyName": "Skyone",
+    "website": "https://skyone.solutions/",
     "internationalizations": [
       {
         "language": "pt",
-        "city": "Utrecht",
-        "country": "Países Baixos",
-        "role": "Desenvolvedor Full-stack",
-        "description": "Na <b>Skydreamer Startup</b>, fui convidado para fazer parte da equipe de desenvolvimento do primeiro aplicativo móvel europeu que transformaria o planejamento de viagens entre amigos em um <i>Jogo de Swipe & Match</i>, oferecendo milhares de destinos em todo o mundo. Sempre com as melhores ofertas de voos, hotéis e apartamentos.<br><br>Na <i>Skydreamer</i>, tive a incrível experiência de vivenciar um <i> ambiente de startup</i>, os prós e os contras , expandindo minha mente de como liderar com o gerenciamento remoto, com prazos curtos e recursos muito limitados. Em setembro de 2017, com a versão <i>Beta</i> em execução e com vários usuários reais, fomos até a <i>TechCrunch Disrupt<i> em São Francisco, onde recebemos uma oferta de uma agência internacional de esportes e entretenimento."
+        "city": "São Paulo",
+        "country": "Brasil",
+        "role": "Engenheiro de Software · Arquiteto e Dev Principal da EasySky",
+        "summary": "Arquiteto e desenvolvedor principal da EasySky, plataforma enterprise de orquestração de infraestrutura em nuvem. Responsável pelas decisões de arquitetura, pelo modelo de segurança e pelos padrões técnicos do time de engenharia.",
+        "highlights": [
+          "Arquitetar a plataforma com <b>Clean Architecture + DDD em 5 camadas</b>, sustentando <b>200+ componentes</b> (services, handlers e integrações) com baixo acoplamento e evolução contínua.",
+          "Desenvolver a <b>API REST de orquestração com 220+ endpoints em .NET / C#</b>, integrada nativamente à <b>Oracle Cloud Infrastructure (OCI SDK)</b>, centralizando a gestão de infraestrutura de clientes enterprise.",
+          "Automatizar via código o <b>provisionamento de infraestrutura</b> (VMs, redes, volumes e security groups), eliminando etapas manuais e erros operacionais.",
+          "Implementar <b>Disaster Recovery automatizado</b> e extensível com <b>Strategy Pattern</b>, permitindo novas estratégias de DR sem alterar o núcleo da plataforma.",
+          "Desenhar a autorização <b>RBAC granular</b> com validação server-side e <b>cache de alta performance</b>, garantindo controle de acesso por recurso sem penalizar a latência.",
+          "Implementar autenticação <b>JWT + refresh token</b> em cookies HttpOnly seguindo <b>OWASP e NIST</b>, mitigando riscos de XSS e sequestro de sessão.",
+          "Definir os <b>guias de arquitetura e padrões de desenvolvimento</b> adotados por todo o time de engenharia, reduzindo a curva de onboarding de novos desenvolvedores.",
+          "Padronizar os contratos de API com <b>documentação OpenAPI</b> avançada e filtros customizados, acelerando a integração com o frontend e consumidores da API."
+        ]
       },
       {
         "language": "en",
-        "city": "Utrecht",
-        "country": "Netherlands",
-        "role": "Full-stack Developer",
-        "description": "At <b>Skydreamer</b>, I was invited to be part of the development team of the first European mobile application that turns traveling with friends into a <i>Swipe and Match Game</i>, offering thousands of destinations all around the world. Always with the best offers for Flights, Hotels, apartments.<br><br>At <i>Skydreamer</i>, I had the amazing experience of a <i>startup environment</i>, the pros, and cons, expanding my mind of how to lead with the remote management, with short deadlines periods and very limited resources. In September 2017, with the 'Beta' version running and with several real users, we went to <i>TechCrunch Disrupt<i> - San Francisco where we received an offer from an international sports and entertainment agency."
+        "city": "São Paulo",
+        "country": "Brazil",
+        "role": "Software Engineer · EasySky Architect & Lead Developer",
+        "summary": "Architect and lead developer of EasySky, an enterprise cloud infrastructure orchestration platform. Accountable for architecture decisions, the security model and the engineering team's technical standards.",
+        "highlights": [
+          "Architected the platform with <b>5-layer Clean Architecture + DDD</b>, supporting <b>200+ components</b> (services, handlers and integrations) with low coupling and continuous evolution.",
+          "Built the <b>220+ endpoint orchestration REST API in .NET / C#</b>, natively integrated with <b>Oracle Cloud Infrastructure (OCI SDK)</b>, centralizing infrastructure management for enterprise customers.",
+          "Automated <b>infrastructure provisioning</b> as code (VMs, networks, volumes and security groups), removing manual steps and operational errors.",
+          "Implemented extensible, <b>automated Disaster Recovery</b> using the <b>Strategy Pattern</b>, enabling new DR strategies without touching the platform core.",
+          "Designed <b>fine-grained RBAC</b> authorization with server-side validation and a <b>high-performance cache</b>, enforcing per-resource access control without latency penalties.",
+          "Implemented <b>JWT + refresh token</b> authentication in HttpOnly cookies following <b>OWASP and NIST</b>, mitigating XSS and session hijacking risks.",
+          "Defined the <b>architecture guides and development standards</b> adopted by the whole engineering team, shortening onboarding for new developers.",
+          "Standardized API contracts with advanced <b>OpenAPI documentation</b> and custom filters, speeding up integration with the front end and API consumers."
+        ]
       }
     ],
     "technologies": [
-      "HTML5",
-      "CSS3",
-      "Javascript",
-      "jQuery",
-      "PHP",
-      "Laravel",
-      "Slim Framework",
-      "React",
-      "React Native",
-      "MySQL",
-      "Elastic Search",
-      "AWS",
-      "Firebase",
-      "Java",
-      "Android",
-      "Swift",
-      "iOS",
-      "Python (data scrapers)",
-      "Scrum",
-      "Unit Tests",
-      "TDD"
-    ],
-    "medias": [
-      {
-        "icon": "youtube",
-        "title": "YouTube Skydreamer",
-        "http": "https://www.youtube.com/channel/UCZ6_SqHB-Sdl7EHIXbvYoSw"
-      },
-      {
-        "icon": "facebook",
-        "title": "Facebook SkyDreamer App",
-        "http": "https://www.facebook.com/skydreamer.io/"
-      }
-    ],
-    "backgroundUrl": "assets/template/experience/utrecht.jpg"
+      ".NET",
+      "C#",
+      "OCI SDK",
+      "Oracle Cloud (OCI)",
+      "Clean Architecture",
+      "DDD",
+      "REST APIs",
+      "OpenAPI",
+      "RBAC",
+      "JWT",
+      "OWASP",
+      "Strategy Pattern",
+      "Disaster Recovery"
+    ]
   }
 ]

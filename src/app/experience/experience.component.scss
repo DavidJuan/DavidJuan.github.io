@@ -9,8 +9,8 @@
 .overlay {
     @include display-flex;
 
-    background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgba(2, 0, 36, 0.6418942577030813) 0%, rgba(0, 0, 0, 0.773546918767507) 25%, rgba(0, 0, 0, 0.9079726890756303) 75%, rgba(0, 0, 0, 0.9924264705882353) 100%);
+    background: radial-gradient(1200px 500px at 85% -10%, rgba(53, 99, 233, 0.35), transparent 60%),
+                linear-gradient(180deg, rgba(14, 20, 44, 0.55) 0%, rgba(14, 20, 44, 0.85) 100%);
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,7 +31,8 @@
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
-    background-color: initial;
+    background-color: #141b38;
+    background-image: linear-gradient(135deg, #10162f 0%, #1b2553 55%, #243a86 100%);
     
     // This is supported natively by Chrome, Opera and Safari. Firefox and IE hasn't implemented it yet (bugzil.la).
     -webkit-transition: background-image 0.3s ease-in-out;
@@ -61,6 +62,7 @@
         & h1 {
             font-size: 42px;
             font-weight: 600;
+            margin: 0.4em 0 0.8em;
         }
     }
 
@@ -78,7 +80,7 @@
         @include display-flex;
 
         flex-grow: 1;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 500;
         align-items: center;
         text-align: center;
@@ -144,7 +146,7 @@
 
     touch-action: pan-y !important;
     flex-direction: column;
-    text-align: right;
+    text-align: left;
     color: #fff;
 
     .events-content {
@@ -158,28 +160,44 @@
 
         .header-block {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.4em;
 
             .logo-block {
-                flex-grow: 1;
+                flex: 0 0 auto;
                 display: flex;
                 align-items: center;
-                justify-content: left;
 
                 img {
-                    height: 90px;
+                    height: 72px;
+                }
+
+                .initials {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 20px;
+                    background: linear-gradient(135deg, #3563e9, #6f8ff5);
+                    color: #fff;
+                    font-size: 28px;
+                    font-weight: 700;
+                    letter-spacing: 0.02em;
+                    box-shadow: 0 10px 24px -10px rgba(53, 99, 233, 0.9);
                 }
             }
 
             .info-block {
-                flex-grow: 1;
+                flex: 1 1 auto;
+                min-width: 0;
             }
         }
 
         .company-name {
-            font-size: 35px;
-            font-weight: 600;
-            line-height: 50px;
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 1.2;
 
             a {
                 text-decoration: none;
@@ -188,34 +206,76 @@
         }
 
         .role {
-            font-size: 22px;
-            font-weight: 300;
-            line-height: 20px;
-            margin-bottom: 1em;
-            font-style: italic;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.4;
+            margin: 0.2em 0 0.5em;
+            color: #aebfff;
         }
 
-        .period {
-            font-size: 20px;
-            font-weight: 400;
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4em 1.6em;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.75);
 
-            span {
-                margin: 5px;
+            .meta-icon {
+                margin-right: 0.5em;
+                color: #8ea6ff;
+            }
+
+            .period span {
                 text-transform: capitalize;
+            }
+
+            .period .devider {
+                margin: 0 0.35em;
             }
         }
 
-        .location {
-            font-size: 20px;
-            font-weight: 400;
-        }
-
         .description {
-            margin-top: 1em;
-            line-height: 1.5em;
-            font-size: 20px;
+            margin-top: 1.6em;
+            font-size: 17px;
             font-weight: normal;
             text-align: left;
+            line-height: 1.6;
+
+            .summary {
+                margin: 0 0 1em;
+                color: rgba(255, 255, 255, 0.8);
+                font-style: italic;
+            }
+
+            .highlights {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    position: relative;
+                    padding-left: 1.6em;
+                    margin-bottom: 0.65em;
+                    color: rgba(255, 255, 255, 0.92);
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: 0.2em;
+                        top: 0.62em;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #6f8ff5;
+                        box-shadow: 0 0 0 4px rgba(111, 143, 245, 0.2);
+                    }
+
+                    ::ng-deep b {
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                }
+            }
         }
 
         ol {
@@ -223,7 +283,7 @@
             padding: 0;
             list-style: none;
 
-            li {
+            > li {
                 position: absolute;
                 z-index: 1;
                 width: 100%;
@@ -283,31 +343,26 @@
             margin-top: 1em;
 
             span.hashtag {
-                padding: 2px 5px 2px 5px;
-                background-color: #414c73;
-                border-radius: 5px;
-                margin-right: 10px;
-                margin-top: 10px;
-
-                &:before {
-                    content: '#';
-                }
+                padding: 0.35em 0.85em;
+                background-color: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.16);
+                border-radius: 999px;
+                margin-right: 8px;
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 500;
             }
         }
         
         .social-media {
-            text-align: right;
-            margin-top: 1em;
+            text-align: left;
+            margin-top: 1.2em;
 
             .icon {
-                font-size: 50px;
+                font-size: 32px;
                 color: #fff;
-                margin: 0 20px 0 20px;
+                margin: 0 16px 0 0;
                 transition: 0.3s;
-
-                &:last-child {
-                    margin-right: 0;
-                }
                 &:hover {
                     color: #8087a1;
                 }

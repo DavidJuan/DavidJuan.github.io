@@ -33,21 +33,22 @@
            i18n="nav@@experiences"
            itemprop="url"><span itemprop="name">Experiences</span></a></li>
       <li><a (click)="resetMenu()"
-           href="#posts"
-           i18n="nav@@posts"
-           itemprop="url"><span itemprop="name">Posts</span></a></li>
+           href="#skills"
+           i18n="nav@@skills"
+           itemprop="url"><span itemprop="name">Skills</span></a></li>
       <li><a (click)="resetMenu()"
            href="#contact"
            i18n="nav@@contact"
            itemprop="url"><span itemprop="name">Contact</span></a></li>
-      <!-- TODO: update here -->
-      <li><a (click)="resetMenu()"
-           [href]="cvPath"
-           i18n-title="nav@@open.as.pdf"
-           [title]="titleCv"
-           target="_blank">
-          <fa-icon [icon]="faCloudDownloadAlt"
-                   class="bar-icon"></fa-icon>
+      <li class="cv-item"><a (click)="resetMenu()"
+           class="cv-download"
+           [href]="resume.href"
+           [attr.download]="resume.fileName"
+           type="application/pdf"
+           i18n-title="nav@@downloadCvTitle"
+           title="Download resume as PDF">
+          <fa-icon [icon]="faDownload"></fa-icon>
+          <span i18n="nav@@downloadCv">Download CV</span>
         </a></li>
     </ul>
   </div>

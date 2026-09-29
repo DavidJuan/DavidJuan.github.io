@@ -61,9 +61,25 @@
                             color: #222f5c;
                         }
 
+                        &.cv-download {
+                            margin: 0.5em 0 0.5em 25px;
+                            padding: 8px 18px;
+                            color: #fff;
+                            font-size: 17px;
+
+                            &:hover {
+                                color: #fff;
+                                background-color: var(--c-accent-hover);
+                            }
+                        }
+
                         &:not(.active):hover {
                             box-shadow: none;
                         }
+                    }
+
+                    &.cv-item:before {
+                        content: none;
                     }
 
                     &:before {

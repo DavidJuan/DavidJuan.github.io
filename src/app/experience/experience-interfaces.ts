@@ -3,6 +3,7 @@ export interface IExperience {
     position: number;
     companyName: string;
     website?: string;
+    logo?: string;
     internationalizations: IExperienceInternationalization[];
     startAt: string; // For the purpose of stringifying MM-DD-YYYY date format
     endAt?: string;  // For the purpose of stringifying MM-DD-YYYY date format
@@ -16,7 +17,8 @@ export interface IExperienceInternationalization {
     city: string;
     country: string;
     role: string;
-    description: string;
+    summary: string;
+    highlights: string[];
 }
 
 export interface IExperienceMedia {

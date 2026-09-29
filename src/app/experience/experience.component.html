@@ -1,6 +1,6 @@
 <section id="experience"
          class="landscape"
-         [style.backgroundImage]="'url('+backgroundUrl+')'">
+         [style.backgroundImage]="backgroundUrl ? 'url(' + backgroundUrl + ')' : null">
   <div class="overlay">
     <div class="container">
       <div class="top-container">
@@ -70,41 +70,57 @@
                 [ngClass]="{'selected': i === 0}"
                 data-id="{{ exp.id }}">
               <div class="header-block">
-                <div class="logo-block"
-                     *ngIf="exp.logo">
-                  <a href="{{ exp.website }}"
-                     target="_blank"><img src="{{ exp.logo }}"
-                         alt="{{ exp.companyName }}"></a>
+                <div class="logo-block">
+                  <img *ngIf="exp.logo; else initialsBadge"
+                       src="{{ exp.logo }}"
+                       alt="{{ exp.companyName }}">
+                  <ng-template #initialsBadge>
+                    <span class="initials"
+                          aria-hidden="true">{{ initials(exp.companyName) }}</span>
+                  </ng-template>
                 </div>
                 <div class="info-block">
                   <div class="company-name"><a href="{{ exp.website }}"
-                       target="_blank">{{ exp.companyName }}</a></div>
+                       target="_blank"
+                       rel="noopener">{{ exp.companyName }}</a></div>
                   <div class="role"
                        appInternationalization
                        [data]="exp.internationalizations"
                        property='role'>Loading...</div>
-                  <div class="period">
-                    <span>{{ exp.startAt | safariDateFormatter | localizedDate:'MMM yyyy' }}</span>
-                    <span class="devider">-</span>
-                    <span>{{ (exp.endAt | safariDateFormatter | localizedDate:'MMM yyyy') }}</span>
-                  </div>
-                  <div class="location">
-                    <span class="city"
-                          appInternationalization
-                          [data]="exp.internationalizations"
-                          property='city'>Loading...</span>
-                    <span class="devider">,&nbsp;</span>
-                    <span class="country"
-                          appInternationalization
-                          [data]="exp.internationalizations"
-                          property='country'>Loading...</span>
+                  <div class="meta">
+                    <span class="period">
+                      <fa-icon [icon]="['fas', 'calendar-alt']"
+                               class="meta-icon"></fa-icon>
+                      <span>{{ exp.startAt | safariDateFormatter | localizedDate:'MMM yyyy' }}</span>
+                      <span class="devider">-</span>
+                      <span>{{ (exp.endAt | safariDateFormatter | localizedDate:'MMM yyyy') }}</span>
+                    </span>
+                    <span class="location">
+                      <fa-icon [icon]="['fas', 'map-marker-alt']"
+                               class="meta-icon"></fa-icon>
+                      <span class="city"
+                            appInternationalization
+                            [data]="exp.internationalizations"
+                            property='city'>Loading...</span>
+                      <span class="devider">,&nbsp;</span>
+                      <span class="country"
+                            appInternationalization
+                            [data]="exp.internationalizations"
+                            property='country'>Loading...</span>
+                    </span>
                   </div>
                 </div>
               </div>
-              <div class="description"
+              <div class="description">
+                <p class="summary"
                    appInternationalization
                    [data]="exp.internationalizations"
-                   property='description'>Loading...</div>
+                   property='summary'>Loading...</p>
+                <ul class="highlights">
+                  <li *ngFor="let highlight of localized(exp)?.highlights"
+                      [innerHTML]="highlight"></li>
+                </ul>
+              </div>
               <div class="technologies">
                 <span class="hashtag"
                       *ngFor="let technology of exp.technologies">{{ technology }}</span>
@@ -112,7 +128,8 @@
               <div class="social-media">
                 <a *ngFor="let media of exp.medias"
                    href="{{ media.http }}"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener">
                   <fa-icon [icon]="['fab', media.icon]"
                            class="icon"
                            title="{{ media.title }}"></fa-icon>

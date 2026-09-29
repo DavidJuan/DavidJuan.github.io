@@ -9,14 +9,14 @@ import {
   LOCALE_ID,
   AfterViewInit,
 } from "@angular/core";
-import { LocationStrategy } from "@angular/common";
 import {
   faBars,
   faShareAlt,
-  faCloudDownloadAlt,
+  faDownload,
   IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { NgNavigatorShareService } from "ng-navigator-share";
+import { IResumeFile, resumeFile } from "../core/utils";
 
 @Component({
   selector: "app-header",
@@ -34,9 +34,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   hasMenuToggled: boolean;
   faBars: IconDefinition;
   faShareAlt: IconDefinition;
-  faCloudDownloadAlt: IconDefinition;
-  cvPath: string;
-  titleCv: string;
+  faDownload: IconDefinition;
+  resume: IResumeFile;
 
   @ViewChild("nav") nav: ElementRef;
   @ViewChild("shareBtn") shareBtn: ElementRef;
@@ -44,8 +43,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   constructor(
     @Inject(LOCALE_ID) public locale: string,
     private renderer: Renderer2,
-    ngNavigatorShareService: NgNavigatorShareService,
-    private url: LocationStrategy
+    ngNavigatorShareService: NgNavigatorShareService
   ) {
     this.ngNavigatorShareService = ngNavigatorShareService;
   }
@@ -81,15 +79,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.faBars = faBars;
     this.faShareAlt = faShareAlt;
-    this.faCloudDownloadAlt = faCloudDownloadAlt;
-    if (this.url.path().includes("pt")) {
-      this.cvPath = "assets/David-Juan-pt.pdf";
-      this.titleCv = "Baixar Curriculo em PDF";
-    }
-    if (this.url.path().includes("en")) {
-      this.cvPath = "assets/David-Juan-en.pdf";
-      this.titleCv = "Download Resume as PDF";
-    }
+    this.faDownload = faDownload;
+    // The resume follows the language of the current build (/en/ or /pt/).
+    this.resume = resumeFile(this.locale);
   }
 
   private updateNavigation() {
@@ -130,8 +122,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   async share() {
     try {
       await this.ngNavigatorShareService.share({
-        title: "Live Resume - David Juan",
-        text: "Hello, I'm a Full-stack .Net/Angular Web Developer with 8+ years of experience designing web projects. Find out more in my live-resume!",
+        title: $localize`:share@@shareTitle:David Juan - Senior Software Engineer | .NET / C# Backend Architect`,
+        text: $localize`:share@@shareText:Senior Software Engineer and .NET / C# Backend Architect with 10 years of experience in microservices, DDD, Clean Architecture, AWS and Oracle Cloud. Check out my resume!`,
         url: "https://davidjuan.github.io",
       });
     } catch (error) {
