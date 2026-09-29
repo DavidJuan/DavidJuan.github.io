@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Juan | Senior Software Engineer &amp; .NET / C# Backend Architect</title>
+  <meta name="description" content="Senior Software Engineer and Backend Architect with 10 years of .NET / C# experience. Resume in Portuguese and English.">
+  <link rel="canonical" href="https://davidjuan.github.io/pt/">
+  <link rel="alternate" hreflang="pt-BR" href="https://davidjuan.github.io/pt/">
+  <link rel="alternate" hreflang="en" href="https://davidjuan.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://davidjuan.github.io/pt/">
+  <link rel="icon" type="image/x-icon" href="/pt/assets/favicon/favicon.ico">
+  <!-- Without JavaScript, fall back to the Portuguese version. -->
+  <noscript><meta http-equiv="refresh" content="0; url=/pt/"></noscript>
+  <script>
+    // Sends visitors to the site version in their browser language (Portuguese or English).
+    (function () {
+      var languages = navigator.languages || [navigator.language || ""];
+      var prefersPortuguese = false;
+      for (var i = 0; i < languages.length; i++) {
+        if (/^pt/i.test(languages[i])) { prefersPortuguese = true; break; }
+        if (/^en/i.test(languages[i])) { break; }
+      }
+      location.replace((prefersPortuguese ? "/pt/" : "/en/") + location.hash);
+    })();
+  </script>
+</head>
+<body>
+  <p><a href="/pt/">Português</a> · <a href="/en/">English</a></p>
+</body>
+</html>
