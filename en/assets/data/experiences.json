@@ -6,6 +6,7 @@
     "endAt": "11-14-2019",
     "companyName": "Grupo Módulos",
     "website": "https://www.grupomodulos.com.br/",
+    "logo": "assets/template/experience/logo/grupo-modulos-logo.png",
     "internationalizations": [
       {
         "language": "pt",
@@ -40,7 +41,9 @@
       "SOLID",
       "DDD",
       "SOAP",
-      "REST"
+      "REST",
+      "Git",
+      "Scrum"
     ],
     "medias": [
       {
@@ -57,6 +60,7 @@
     "endAt": "08-23-2021",
     "companyName": "TOTVS",
     "website": "https://www.totvs.com/",
+    "logo": "assets/template/experience/logo/totvs-logo.png",
     "internationalizations": [
       {
         "language": "pt",
@@ -97,7 +101,9 @@
       "OpenAPI",
       "TDD",
       "Angular",
-      "TypeScript"
+      "TypeScript",
+      "Git",
+      "Scrum"
     ]
   },
   {
@@ -148,7 +154,10 @@
       "SQL Server",
       "MongoDB",
       "Angular",
-      "TypeScript"
+      "TypeScript",
+      "Docker",
+      "Git",
+      "Scrum"
     ]
   },
   {
@@ -157,6 +166,8 @@
     "startAt": "01-20-2025",
     "companyName": "Skyone",
     "website": "https://skyone.solutions/",
+    "logo": "assets/template/experience/logo/skyone-logo.svg",
+    "logoBackground": "#0e1430",
     "internationalizations": [
       {
         "language": "pt",
@@ -206,7 +217,11 @@
       "JWT",
       "OWASP",
       "Strategy Pattern",
-      "Disaster Recovery"
+      "Disaster Recovery",
+      "RabbitMQ",
+      "Docker",
+      "Git",
+      "Scrum"
     ]
   }
 ]
