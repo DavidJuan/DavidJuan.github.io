@@ -6,11 +6,11 @@
       "synopsis": "Stack e práticas que uso no dia a dia para construir backends escaláveis, seguros e fáceis de evoluir.",
       "categories": [
         { "icon": "server", "title": "Backend", "items": [".NET / .NET Core", "C#", "ASP.NET Core Web API", "Entity Framework", "Node.js", "Java", "APIs REST", "OpenAPI / Swagger"] },
-        { "icon": "sitemap", "title": "Arquitetura", "items": ["Microsserviços", "Clean Architecture", "DDD", "CQRS", "Event-Driven", "SOLID", "Design Patterns", "TDD"] },
-        { "icon": "cloud", "title": "Cloud", "items": ["Oracle Cloud Infrastructure (OCI)", "OCI SDK", "AWS Lambda", "Amazon S3", "AWS API Gateway", "Serverless", "Automação de infraestrutura"] },
+        { "icon": "sitemap", "title": "Arquitetura", "items": ["Microsserviços", "Clean Architecture", "DDD", "CQRS", "Event-Driven", "RabbitMQ", "SOLID", "Design Patterns", "TDD"] },
+        { "icon": "cloud", "title": "Cloud", "items": ["Oracle Cloud Infrastructure (OCI)", "OCI Cloud", "OCI SDK", "AWS Lambda", "Amazon S3", "AWS API Gateway", "Serverless", "Automação de infraestrutura"] },
         { "icon": "database", "title": "Dados", "items": ["SQL Server", "PostgreSQL", "MongoDB", "Stored Procedures", "ETL", "GoodData"] },
         { "icon": "shield-alt", "title": "Segurança", "items": ["OAuth2", "JWT + Refresh Token", "RBAC", "OWASP", "NIST"] },
-        { "icon": "cogs", "title": "DevOps & Frontend", "items": ["CI/CD", "Jenkins", "SonarQube", "Angular", "TypeScript"] }
+        { "icon": "cogs", "title": "DevOps, Ágil & Frontend", "items": ["Docker", "Git", "CI/CD", "Jenkins", "SonarQube", "Scrum", "Angular", "TypeScript"] }
       ],
       "certificationsTitle": "Certificações",
       "certifications": [
@@ -33,11 +33,11 @@
       "synopsis": "The stack and practices I use every day to build scalable, secure and easy-to-evolve backends.",
       "categories": [
         { "icon": "server", "title": "Backend", "items": [".NET / .NET Core", "C#", "ASP.NET Core Web API", "Entity Framework", "Node.js", "Java", "REST APIs", "OpenAPI / Swagger"] },
-        { "icon": "sitemap", "title": "Architecture", "items": ["Microservices", "Clean Architecture", "DDD", "CQRS", "Event-Driven", "SOLID", "Design Patterns", "TDD"] },
-        { "icon": "cloud", "title": "Cloud", "items": ["Oracle Cloud Infrastructure (OCI)", "OCI SDK", "AWS Lambda", "Amazon S3", "AWS API Gateway", "Serverless", "Infrastructure automation"] },
+        { "icon": "sitemap", "title": "Architecture", "items": ["Microservices", "Clean Architecture", "DDD", "CQRS", "Event-Driven", "RabbitMQ", "SOLID", "Design Patterns", "TDD"] },
+        { "icon": "cloud", "title": "Cloud", "items": ["Oracle Cloud Infrastructure (OCI)", "OCI Cloud", "OCI SDK", "AWS Lambda", "Amazon S3", "AWS API Gateway", "Serverless", "Infrastructure automation"] },
         { "icon": "database", "title": "Data", "items": ["SQL Server", "PostgreSQL", "MongoDB", "Stored Procedures", "ETL", "GoodData"] },
         { "icon": "shield-alt", "title": "Security", "items": ["OAuth2", "JWT + Refresh Token", "RBAC", "OWASP", "NIST"] },
-        { "icon": "cogs", "title": "DevOps & Frontend", "items": ["CI/CD", "Jenkins", "SonarQube", "Angular", "TypeScript"] }
+        { "icon": "cogs", "title": "DevOps, Agile & Frontend", "items": ["Docker", "Git", "CI/CD", "Jenkins", "SonarQube", "Scrum", "Angular", "TypeScript"] }
       ],
       "certificationsTitle": "Certifications",
       "certifications": [

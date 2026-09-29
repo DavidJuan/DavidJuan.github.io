@@ -10,7 +10,7 @@ import { Meta, Title } from "@angular/platform-browser";
 export class AppComponent implements OnInit {
   title: string = $localize`:meta@@pageTitle:David Juan | Senior Software Engineer & .NET / C# Backend Architect`;
   description: string = $localize`:meta@@pageDescription:Senior Software Engineer and Backend Architect with 10 years of .NET / C# experience: microservices, DDD, Clean Architecture, CQRS, AWS and Oracle Cloud (OCI). Download my resume in English or Portuguese.`;
-  keywords: string = $localize`:meta@@pageKeywords:Senior Software Engineer, Backend Architect, Software Architect, .NET Developer, C# Developer, ASP.NET Core, Microservices, DDD, Clean Architecture, CQRS, REST API, AWS, Oracle Cloud Infrastructure, OCI, SQL Server, PostgreSQL, MongoDB, OAuth2, JWT, Angular, David Juan, David Juan resume`;
+  keywords: string = $localize`:meta@@pageKeywords:Senior Software Engineer, Backend Architect, Software Architect, .NET Developer, C# Developer, ASP.NET Core, Microservices, DDD, Clean Architecture, CQRS, REST API, AWS, Oracle Cloud Infrastructure, OCI, OCI Cloud, Docker, RabbitMQ, Git, Scrum, SQL Server, PostgreSQL, MongoDB, OAuth2, JWT, Angular, David Juan, David Juan resume`;
 
   constructor(
     private titleService: Title,

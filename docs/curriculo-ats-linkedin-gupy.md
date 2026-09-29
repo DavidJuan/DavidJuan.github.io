@@ -37,7 +37,7 @@ Destaques:
 - Itaú BBA: microsserviços de recuperação de crédito com CQRS (SQL Server + MongoDB) e serverless na AWS
 - TOTVS: sistemas regulados pela ANS com TDD e APIs documentadas em OpenAPI
 
-Competências: .NET / .NET Core · C# · ASP.NET Core Web API · Entity Framework · Node.js · Java · Microsserviços · Clean Architecture · DDD · CQRS · Event-Driven · SOLID · Design Patterns · TDD · APIs REST · OpenAPI / Swagger · AWS (Lambda, S3, API Gateway) · Oracle Cloud Infrastructure (OCI) · SQL Server · PostgreSQL · MongoDB · OAuth2 · JWT · RBAC · OWASP · CI/CD · Jenkins · SonarQube · Angular · TypeScript
+Competências: .NET / .NET Core · C# · ASP.NET Core Web API · Entity Framework · Node.js · Java · Microsserviços · Clean Architecture · DDD · CQRS · Event-Driven · RabbitMQ · SOLID · Design Patterns · TDD · APIs REST · OpenAPI / Swagger · AWS (Lambda, S3, API Gateway) · Oracle Cloud Infrastructure (OCI Cloud) · Docker · Git · SQL Server · PostgreSQL · MongoDB · OAuth2 · JWT · RBAC · OWASP · CI/CD · Jenkins · SonarQube · Scrum · Angular · TypeScript
 
 Certificações: Oracle Cloud Infrastructure 2024 Certified Foundations Associate · Formação Arquiteto de Software
 
@@ -49,7 +49,7 @@ I am currently the architect and lead developer of EasySky, an enterprise cloud 
 
 I focus on designing systems teams can maintain and evolve: well-defined architecture, clear API contracts (OpenAPI), security by design (OWASP, NIST) and engineering standards that shorten onboarding and raise delivery quality.
 
-Skills: .NET / .NET Core · C# · ASP.NET Core Web API · Entity Framework · Node.js · Java · Microservices · Clean Architecture · DDD · CQRS · Event-Driven · SOLID · Design Patterns · TDD · REST APIs · OpenAPI / Swagger · AWS (Lambda, S3, API Gateway) · Oracle Cloud Infrastructure (OCI) · SQL Server · PostgreSQL · MongoDB · OAuth2 · JWT · RBAC · OWASP · CI/CD · Jenkins · SonarQube · Angular · TypeScript
+Skills: .NET / .NET Core · C# · ASP.NET Core Web API · Entity Framework · Node.js · Java · Microservices · Clean Architecture · DDD · CQRS · Event-Driven · RabbitMQ · SOLID · Design Patterns · TDD · REST APIs · OpenAPI / Swagger · AWS (Lambda, S3, API Gateway) · Oracle Cloud Infrastructure (OCI Cloud) · Docker · Git · SQL Server · PostgreSQL · MongoDB · OAuth2 · JWT · RBAC · OWASP · CI/CD · Jenkins · SonarQube · Scrum · Angular · TypeScript
 
 ---
 
@@ -114,11 +114,10 @@ ERP para pequenas e médias empresas integrado à emissão de notas fiscais elet
 ## 3. Recomendações do recrutador
 
 1. **Números reais.** Os bullets usam só métricas que já estavam no seu currículo (220+ endpoints, 200+ componentes, 5 camadas, 10 anos). Se você souber os números abaixo, eles aumentam muito a nota em ATS e na triagem humana:
-   - Onboarding: "de **X** para **Y** semanas" (no PDF original havia esse espaço em branco).
    - Itaú BBA: volume processado (registros/dia, contratos) ou ganho de latência com CQRS.
    - EasySky: número de clientes/tenants, tempo de provisionamento antes × depois, RTO/RPO do Disaster Recovery.
    - TOTVS: cobertura de testes alcançada com TDD.
-2. **Palavras-chave para incluir *somente se forem verdade*:** Docker, Kubernetes, Azure / Azure DevOps, Git, GitHub Actions, RabbitMQ / Kafka, Redis (qual cache você usa no RBAC?), xUnit / NUnit, Scrum / Kanban, .NET 8, Terraform. Muitas vagas .NET filtram por esses termos.
+2. **Palavras-chave para incluir *somente se forem verdade*:** Kubernetes, Azure / Azure DevOps, GitHub Actions, Kafka, Redis (qual cache você usa no RBAC?), xUnit / NUnit, Kanban, .NET 8, Terraform. (Docker, Git, RabbitMQ, Scrum e OCI Cloud já foram incluídos.) Muitas vagas .NET filtram por esses termos.
 3. **Na Gupy:** cole o resumo no campo "Sobre", cadastre cada experiência com os bullets acima e preencha as competências **uma por uma**. O ranking da Gupy compara o texto da vaga com essas palavras.
 4. **No LinkedIn:** use o headline acima, fixe as 3 competências principais (.NET, C#, Arquitetura de Software) e deixe "Open to Work" visível só para recrutadores.
 5. **Dados pessoais:** tirei a idade e a data de nascimento do site. Não são exigidas e podem gerar viés na triagem.

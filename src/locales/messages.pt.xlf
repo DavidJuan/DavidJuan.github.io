@@ -325,8 +325,8 @@
         <note priority="1" from="description">meta</note>
       </trans-unit>
       <trans-unit id="pageKeywords" datatype="html">
-        <source>Senior Software Engineer, Backend Architect, Software Architect, .NET Developer, C# Developer, ASP.NET Core, Microservices, DDD, Clean Architecture, CQRS, REST API, AWS, Oracle Cloud Infrastructure, OCI, SQL Server, PostgreSQL, MongoDB, OAuth2, JWT, Angular, David Juan, David Juan resume</source>
-        <target>Engenheiro de Software Sênior, Arquiteto Backend, Arquiteto de Software, Desenvolvedor .NET, Desenvolvedor C#, ASP.NET Core, Microsserviços, DDD, Clean Architecture, CQRS, API REST, AWS, Oracle Cloud Infrastructure, OCI, SQL Server, PostgreSQL, MongoDB, OAuth2, JWT, Angular, David Juan, currículo David Juan</target>
+        <source>Senior Software Engineer, Backend Architect, Software Architect, .NET Developer, C# Developer, ASP.NET Core, Microservices, DDD, Clean Architecture, CQRS, REST API, AWS, Oracle Cloud Infrastructure, OCI, OCI Cloud, Docker, RabbitMQ, Git, Scrum, SQL Server, PostgreSQL, MongoDB, OAuth2, JWT, Angular, David Juan, David Juan resume</source>
+        <target>Engenheiro de Software Sênior, Arquiteto Backend, Arquiteto de Software, Desenvolvedor .NET, Desenvolvedor C#, ASP.NET Core, Microsserviços, DDD, Clean Architecture, CQRS, API REST, AWS, Oracle Cloud Infrastructure, OCI, OCI Cloud, Docker, RabbitMQ, Git, Scrum, SQL Server, PostgreSQL, MongoDB, OAuth2, JWT, Angular, David Juan, currículo David Juan</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">1</context>
